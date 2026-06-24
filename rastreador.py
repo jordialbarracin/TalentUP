@@ -43,7 +43,7 @@ FUENTES_LEADS = [
     {
         "nombre": "Contratación Directa",
         "url": f"https://news.google.com/rss/search?q={q_contratacion}&hl=es-ES&gl=ES&ceid=ES:es",
-        "categoria": "Contratación"
+        "categoria": "Contratacion"
     },
     {
         "nombre": "Nuevas Aperturas",
@@ -53,7 +53,7 @@ FUENTES_LEADS = [
     {
         "nombre": "Alertas de Reestructuración",
         "url": f"https://news.google.com/rss/search?q={q_reestructuracion}&hl=es-ES&gl=ES&ceid=ES:es",
-        "categoria": "Reestructuración"
+        "categoria": "Reestructuracion"
     }
 ]
 
