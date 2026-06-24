@@ -9,7 +9,7 @@ En el sector de los Recursos Humanos, la información está extremadamente fragm
 El problema era que *buscar esto a mano todos los días es una pérdida masiva de tiempo*.
 
 ## La Propuesta de Valor de TalentUP
-Nuestra meta era crear **"El Bloomberg de los Recursos Humanos"**. 
+El objetivo principal del proyecto era crear **"El Bloomberg de los Recursos Humanos"**. 
 Una herramienta que:
 - Fuese 100% automática (sin intervención humana diaria).
 - Filtrara el "ruido" de internet y trajera solo noticias hiper-relevantes.
