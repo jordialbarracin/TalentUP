@@ -16,18 +16,18 @@ const window_news_data = [
     "categoria": "Legislación"
   },
   {
-    "titulo": "Chega deja tirado a Luís Montenegro, que ve fracasar su ambiciosa reforma laboral - La Voz de Galicia",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOTduWEV5NW1ubUdJZEczZE9OMzViZ2szaXc1TExNQzI5aFNIV1pJdmRYU3RDLUN0dUhWS2p1WWF1cEp0NzVkbk5lWElnRWlLN2NxTzVCaTRyaDlKWWlUaHBXOFpxZENNaG02M1ctYjVRNjFwQXplSWJ4NWx1RHQyQlVLTXBZN2xRNzU3Q1dxenpKVGxGLWdQTkdpZml4NlhOeWRZT3hicENpODBpRXlLMFRPaDZoX1pMYnZpVFdZdGdXWXE1QmlPcGUycGR6N0pOOWhMS21ETWs4WkdGNU9CMHU0Yw?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOTduWEV5NW1ubUdJZEczZE9OMzViZ2szaXc1TExNQzI5aFNIV1pJdmRYU3RDLUN0dUhWS2p1WWF1cEp0NzVkbk5lWElnRWlLN2NxTzVCaTRyaDlKWWlUaHBXOFpxZENNaG02M1ctYjVRNjFwQXplSWJ4NWx1RHQyQlVLTXBZN2xRNzU3Q1dxenpKVGxGLWdQTkdpZml4NlhOeWRZT3hicENpODBpRXlLMFRPaDZoX1pMYnZpVFdZdGdXWXE1QmlPcGUycGR6N0pOOWhMS21ETWs4WkdGNU9CMHU0Yw?oc=5\" target=\"_blank\">Chega deja tirado a Luís Montenegro, que ve fracasar su ambiciosa reforma laboral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Voz de Galicia</font>",
-    "fecha": "2026-06-20T03:00:36Z",
-    "fuente": "Novedades Legales (España)",
-    "categoria": "Legislación"
-  },
-  {
     "titulo": "Los trabajadores de baja médica pueden cancelar sus vacaciones y podrán recuperarlas hasta 18 meses más tarde, incluso si se acumulan con las del año siguiente - El Economista",
     "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQU3lnazVLb0x0ajUtZGsxajBpU2xkd1pweVdBYlpvODhYRHh5Vk9WRVgzbGFqWGV2VnFPUGdCdnlBemhFVHgwQ0tNYnJLX2hJQjFkREJvSmhZWGdNbHhJR0ZnSS1hQVZKVjE3bTU2amI1cEItZWhjU2dhaGdYWDlGbGZ0SU9tWWRRQ2k0aVdJalo1WlJYQXViSEVlR3NrTDgtOXc0S0RNR28xRUlLUWlBbEEwejV6d3dKRktQcV9GUGF6MjBJU2pmUzA2NTBiZldPa0ZNNC1mLXlSb3VWbTVLSjZDZHVZbTVsc2JVUHNYMF9JTjVMbklCbnh6RjNxbDdPY1N0OGpYX1phU3JRVU1hNklDTXg4bTJFWWVBSmxzTVY2YkxKekxKZ19LNHBOU2ZJOEp0LWg1MkdYZUhvcno0aGJMdk5UWTg?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMixwJBVV95cUxQU3lnazVLb0x0ajUtZGsxajBpU2xkd1pweVdBYlpvODhYRHh5Vk9WRVgzbGFqWGV2VnFPUGdCdnlBemhFVHgwQ0tNYnJLX2hJQjFkREJvSmhZWGdNbHhJR0ZnSS1hQVZKVjE3bTU2amI1cEItZWhjU2dhaGdYWDlGbGZ0SU9tWWRRQ2k0aVdJalo1WlJYQXViSEVlR3NrTDgtOXc0S0RNR28xRUlLUWlBbEEwejV6d3dKRktQcV9GUGF6MjBJU2pmUzA2NTBiZldPa0ZNNC1mLXlSb3VWbTVLSjZDZHVZbTVsc2JVUHNYMF9JTjVMbklCbnh6RjNxbDdPY1N0OGpYX1phU3JRVU1hNklDTXg4bTJFWWVBSmxzTVY2YkxKekxKZ19LNHBOU2ZJOEp0LWg1MkdYZUhvcno0aGJMdk5UWTg?oc=5\" target=\"_blank\">Los trabajadores de baja médica pueden cancelar sus vacaciones y podrán recuperarlas hasta 18 meses más tarde, incluso si se acumulan con las del año siguiente</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Economista</font>",
     "fecha": "2026-06-22T15:15:10Z",
+    "fuente": "Novedades Legales (España)",
+    "categoria": "Legislación"
+  },
+  {
+    "titulo": "Chega deja tirado a Luís Montenegro, que ve fracasar su ambiciosa reforma laboral - La Voz de Galicia",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOTduWEV5NW1ubUdJZEczZE9OMzViZ2szaXc1TExNQzI5aFNIV1pJdmRYU3RDLUN0dUhWS2p1WWF1cEp0NzVkbk5lWElnRWlLN2NxTzVCaTRyaDlKWWlUaHBXOFpxZENNaG02M1ctYjVRNjFwQXplSWJ4NWx1RHQyQlVLTXBZN2xRNzU3Q1dxenpKVGxGLWdQTkdpZml4NlhOeWRZT3hicENpODBpRXlLMFRPaDZoX1pMYnZpVFdZdGdXWXE1QmlPcGUycGR6N0pOOWhMS21ETWs4WkdGNU9CMHU0Yw?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOTduWEV5NW1ubUdJZEczZE9OMzViZ2szaXc1TExNQzI5aFNIV1pJdmRYU3RDLUN0dUhWS2p1WWF1cEp0NzVkbk5lWElnRWlLN2NxTzVCaTRyaDlKWWlUaHBXOFpxZENNaG02M1ctYjVRNjFwQXplSWJ4NWx1RHQyQlVLTXBZN2xRNzU3Q1dxenpKVGxGLWdQTkdpZml4NlhOeWRZT3hicENpODBpRXlLMFRPaDZoX1pMYnZpVFdZdGdXWXE1QmlPcGUycGR6N0pOOWhMS21ETWs4WkdGNU9CMHU0Yw?oc=5\" target=\"_blank\">Chega deja tirado a Luís Montenegro, que ve fracasar su ambiciosa reforma laboral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Voz de Galicia</font>",
+    "fecha": "2026-06-20T03:00:36Z",
     "fuente": "Novedades Legales (España)",
     "categoria": "Legislación"
   },
@@ -64,14 +64,6 @@ const window_news_data = [
     "categoria": "Legislación"
   },
   {
-    "titulo": "Estos son los cuatro conceptos fundamentales del Estatuto de los Trabajadores sobre tus vacaciones para este verano - La Razón",
-    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaXF2a1hBX1MtQy11UkFleng1TTRjaXpUU19mTkx0TzZpejJpV3Z0Z1BwM3daOTV2YWVMWFRtZUcxZk1KRmE2QTB0QnI4emx3aDdjNC1DTUpJdDM5REtPbHdkU1c3c2U2OW5pZzFJYzZfTXpzNnA3a3V1ZmhVZFVtMWNSWmlmUDZEMHRWR2I3ZFFnVVcyMXVRcDBLM2FuVE1Na0ExaHBxaVJLNlEzQjhEOThLQjhrUjdKN2lKa2RHM2pIS2xjZkJ4enVtZDdxNFBXcDlWeDk0TVRKdndRZEhMWEJlRWlRQl9jVUxQM1hYRkVnLUJORlHSAYoCQVVfeXFMTktROVkyLTBzZ2pIQ1N5Rk0xY2haVnRnMUJuZVRqeC0zejdSMTV0WFczM3E3d296akJOZjYzS2VNTVhwNWF5ei11ekZrSWdIV0lXMHo4VUdCR1ZQR09SdHA3TWVlcGxtMTg1U2V2MTVFdE5lSFVILVlBVXVtOTNWeVFMUlJ0d1N4VFdhQ2g0LWY3b29mcXhROUp0aGluSlp1alJGTXVWWlZ1V2VOYVZ3UTJUM1VjTXZPY05lNjhaYkdlUm52Y2VCb0xJQkVNanUzVVQ2RWdyaGRDdU5uR1dzRnlrZllDZEFSRFVOX2hfZ19mY3RGSEtTcXBVZmIwUThTTkRBU0hUYUZ0V1E?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaXF2a1hBX1MtQy11UkFleng1TTRjaXpUU19mTkx0TzZpejJpV3Z0Z1BwM3daOTV2YWVMWFRtZUcxZk1KRmE2QTB0QnI4emx3aDdjNC1DTUpJdDM5REtPbHdkU1c3c2U2OW5pZzFJYzZfTXpzNnA3a3V1ZmhVZFVtMWNSWmlmUDZEMHRWR2I3ZFFnVVcyMXVRcDBLM2FuVE1Na0ExaHBxaVJLNlEzQjhEOThLQjhrUjdKN2lKa2RHM2pIS2xjZkJ4enVtZDdxNFBXcDlWeDk0TVRKdndRZEhMWEJlRWlRQl9jVUxQM1hYRkVnLUJORlHSAYoCQVVfeXFMTktROVkyLTBzZ2pIQ1N5Rk0xY2haVnRnMUJuZVRqeC0zejdSMTV0WFczM3E3d296akJOZjYzS2VNTVhwNWF5ei11ekZrSWdIV0lXMHo4VUdCR1ZQR09SdHA3TWVlcGxtMTg1U2V2MTVFdE5lSFVILVlBVXVtOTNWeVFMUlJ0d1N4VFdhQ2g0LWY3b29mcXhROUp0aGluSlp1alJGTXVWWlZ1V2VOYVZ3UTJUM1VjTXZPY05lNjhaYkdlUm52Y2VCb0xJQkVNanUzVVQ2RWdyaGRDdU5uR1dzRnlrZllDZEFSRFVOX2hfZ19mY3RGSEtTcXBVZmIwUThTTkRBU0hUYUZ0V1E?oc=5\" target=\"_blank\">Estos son los cuatro conceptos fundamentales del Estatuto de los Trabajadores sobre tus vacaciones para este verano</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Razón</font>",
-    "fecha": "2026-06-24T09:09:22Z",
-    "fuente": "Novedades Legales (España)",
-    "categoria": "Legislación"
-  },
-  {
     "titulo": "El Estatuto de los Trabajadores confirma en su artículo 38 qué sucede con los días de vacaciones no disfrutadas - Business Insider España",
     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNXzRqV19wRHdoUWJnZEZWM1d1RmVLUjlkNkF5TkNhTVBLODNXVWdQanY4LXlFRk1FUVVGaEprOG1DX2cwTHFCdnVrWDNmMVBlVDVrYnJneXZ3WWRnazQ2a2c3bkYyLXFaYlhoR2ZRQjJmdFRySkZ4M2NBVTFfX04xUDhkeUZoWW5ZLU0yZERRNGVIeFlYYjVKTVN2Y3RUTGtiODh1VWFpdUlBb3ZFZVVwTzNxeFQzY0JjS0t5RGNhQXJPblBZX0tIMi03MmtlbUIwaU83TUJtNEY1bWRaVVREY2x6a2dKclRaeHfSAe8BQVVfeXFMUGVLdERWTENVVGt2aFRGWFBpeUp1U2ZyVkUwOE5GSnZfaDFtZ2puT2lYemFkSjBraWJNQjY1SWdiNzJtYUhhdXF4UXdrY2JNR0lwajlEUXpxS2dtNlN3NlRpWUhlWUlUVHNVTDRsUExicFhleHVNSGd4ejBoZmlmbVgzWGhMTml4WFM5dTIzVHNBNXlnaERCUEtvZWlwTkhhX2lwMF9VcjU3a3J0emZockJ3VDRzaldEbjVfZ0JZVHJKYmo0bGFVNDZpTnIyNWFLQmZPSFFueUJHTG8yTE9YY3cxc3hGa1YybnZrWnpNQU0?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNXzRqV19wRHdoUWJnZEZWM1d1RmVLUjlkNkF5TkNhTVBLODNXVWdQanY4LXlFRk1FUVVGaEprOG1DX2cwTHFCdnVrWDNmMVBlVDVrYnJneXZ3WWRnazQ2a2c3bkYyLXFaYlhoR2ZRQjJmdFRySkZ4M2NBVTFfX04xUDhkeUZoWW5ZLU0yZERRNGVIeFlYYjVKTVN2Y3RUTGtiODh1VWFpdUlBb3ZFZVVwTzNxeFQzY0JjS0t5RGNhQXJPblBZX0tIMi03MmtlbUIwaU83TUJtNEY1bWRaVVREY2x6a2dKclRaeHfSAe8BQVVfeXFMUGVLdERWTENVVGt2aFRGWFBpeUp1U2ZyVkUwOE5GSnZfaDFtZ2puT2lYemFkSjBraWJNQjY1SWdiNzJtYUhhdXF4UXdrY2JNR0lwajlEUXpxS2dtNlN3NlRpWUhlWUlUVHNVTDRsUExicFhleHVNSGd4ejBoZmlmbVgzWGhMTml4WFM5dTIzVHNBNXlnaERCUEtvZWlwTkhhX2lwMF9VcjU3a3J0emZockJ3VDRzaldEbjVfZ0JZVHJKYmo0bGFVNDZpTnIyNWFLQmZPSFFueUJHTG8yTE9YY3cxc3hGa1YybnZrWnpNQU0?oc=5\" target=\"_blank\">El Estatuto de los Trabajadores confirma en su artículo 38 qué sucede con los días de vacaciones no disfrutadas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Insider España</font>",
@@ -88,10 +80,26 @@ const window_news_data = [
     "categoria": "Legislación"
   },
   {
+    "titulo": "Estos son los cuatro conceptos fundamentales del Estatuto de los Trabajadores sobre tus vacaciones para este verano - La Razón",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaXF2a1hBX1MtQy11UkFleng1TTRjaXpUU19mTkx0TzZpejJpV3Z0Z1BwM3daOTV2YWVMWFRtZUcxZk1KRmE2QTB0QnI4emx3aDdjNC1DTUpJdDM5REtPbHdkU1c3c2U2OW5pZzFJYzZfTXpzNnA3a3V1ZmhVZFVtMWNSWmlmUDZEMHRWR2I3ZFFnVVcyMXVRcDBLM2FuVE1Na0ExaHBxaVJLNlEzQjhEOThLQjhrUjdKN2lKa2RHM2pIS2xjZkJ4enVtZDdxNFBXcDlWeDk0TVRKdndRZEhMWEJlRWlRQl9jVUxQM1hYRkVnLUJORlHSAYoCQVVfeXFMTktROVkyLTBzZ2pIQ1N5Rk0xY2haVnRnMUJuZVRqeC0zejdSMTV0WFczM3E3d296akJOZjYzS2VNTVhwNWF5ei11ekZrSWdIV0lXMHo4VUdCR1ZQR09SdHA3TWVlcGxtMTg1U2V2MTVFdE5lSFVILVlBVXVtOTNWeVFMUlJ0d1N4VFdhQ2g0LWY3b29mcXhROUp0aGluSlp1alJGTXVWWlZ1V2VOYVZ3UTJUM1VjTXZPY05lNjhaYkdlUm52Y2VCb0xJQkVNanUzVVQ2RWdyaGRDdU5uR1dzRnlrZllDZEFSRFVOX2hfZ19mY3RGSEtTcXBVZmIwUThTTkRBU0hUYUZ0V1E?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaXF2a1hBX1MtQy11UkFleng1TTRjaXpUU19mTkx0TzZpejJpV3Z0Z1BwM3daOTV2YWVMWFRtZUcxZk1KRmE2QTB0QnI4emx3aDdjNC1DTUpJdDM5REtPbHdkU1c3c2U2OW5pZzFJYzZfTXpzNnA3a3V1ZmhVZFVtMWNSWmlmUDZEMHRWR2I3ZFFnVVcyMXVRcDBLM2FuVE1Na0ExaHBxaVJLNlEzQjhEOThLQjhrUjdKN2lKa2RHM2pIS2xjZkJ4enVtZDdxNFBXcDlWeDk0TVRKdndRZEhMWEJlRWlRQl9jVUxQM1hYRkVnLUJORlHSAYoCQVVfeXFMTktROVkyLTBzZ2pIQ1N5Rk0xY2haVnRnMUJuZVRqeC0zejdSMTV0WFczM3E3d296akJOZjYzS2VNTVhwNWF5ei11ekZrSWdIV0lXMHo4VUdCR1ZQR09SdHA3TWVlcGxtMTg1U2V2MTVFdE5lSFVILVlBVXVtOTNWeVFMUlJ0d1N4VFdhQ2g0LWY3b29mcXhROUp0aGluSlp1alJGTXVWWlZ1V2VOYVZ3UTJUM1VjTXZPY05lNjhaYkdlUm52Y2VCb0xJQkVNanUzVVQ2RWdyaGRDdU5uR1dzRnlrZllDZEFSRFVOX2hfZ19mY3RGSEtTcXBVZmIwUThTTkRBU0hUYUZ0V1E?oc=5\" target=\"_blank\">Estos son los cuatro conceptos fundamentales del Estatuto de los Trabajadores sobre tus vacaciones para este verano</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Razón</font>",
+    "fecha": "2026-06-24T09:09:22Z",
+    "fuente": "Novedades Legales (España)",
+    "categoria": "Legislación"
+  },
+  {
     "titulo": "Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales - Forbes España",
     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5\" target=\"_blank\">Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Forbes España</font>",
     "fecha": "2026-06-18T11:09:23Z",
+    "fuente": "Novedades Legales (España)",
+    "categoria": "Legislación"
+  },
+  {
+    "titulo": "Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\" - Servicios Emergencia",
+    "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5\" target=\"_blank\">Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Servicios Emergencia</font>",
+    "fecha": "2026-06-24T10:38:00Z",
     "fuente": "Novedades Legales (España)",
     "categoria": "Legislación"
   },
@@ -108,14 +116,6 @@ const window_news_data = [
     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUTd1aURkajhiV3dXbHpvZzRlb2hoSUZMQl9GZzdYdUJCQ2l3cU9pOTZPS05rejMwTWtCcE1ISUVya29KLWc3M1JKQkRjZlFGZ3FBRm1ZbldBUGV2UU1FVTliSTl6UmN1dW9pOVBmclFWTHdTRHJxNldNSVV2VjE2Q2V2aWVCZzRxdE5nTnBCNVh6LV9tWnotOGc4QlhCc1RwZDVBVjhMdm1xY2pJdzZJZnMtZi1Ga3ptRVNrNGd0NHlpOVVWQTUzUW9RRdIB0AFBVV95cUxPSlZVZUlYdjBVM3hTc193VlMydkp0cWRpYnlEbHlvdHpOU2pIcGJSRXliU3RjeERVWVJDSEI2TDJvNGMtYmlXYUMxWGlOaFBaaUlfVjh1VGRJWkI3c3NCZFVXR2gxM09MMjhyb19jNzVIcExPdUtyZ1BUbHZDeE1ONTJUdFFJTk5ZZ0VrNmYyQ1lXQ2czQkwwd3pEMURCS3BmaTZod2kzNWRVR0tqcFNKZWlQZ0luV0tJb1QtRHlwRkpPYnhqdDNqRFlvXzNKUVhS?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQUTd1aURkajhiV3dXbHpvZzRlb2hoSUZMQl9GZzdYdUJCQ2l3cU9pOTZPS05rejMwTWtCcE1ISUVya29KLWc3M1JKQkRjZlFGZ3FBRm1ZbldBUGV2UU1FVTliSTl6UmN1dW9pOVBmclFWTHdTRHJxNldNSVV2VjE2Q2V2aWVCZzRxdE5nTnBCNVh6LV9tWnotOGc4QlhCc1RwZDVBVjhMdm1xY2pJdzZJZnMtZi1Ga3ptRVNrNGd0NHlpOVVWQTUzUW9RRdIB0AFBVV95cUxPSlZVZUlYdjBVM3hTc193VlMydkp0cWRpYnlEbHlvdHpOU2pIcGJSRXliU3RjeERVWVJDSEI2TDJvNGMtYmlXYUMxWGlOaFBaaUlfVjh1VGRJWkI3c3NCZFVXR2gxM09MMjhyb19jNzVIcExPdUtyZ1BUbHZDeE1ONTJUdFFJTk5ZZ0VrNmYyQ1lXQ2czQkwwd3pEMURCS3BmaTZod2kzNWRVR0tqcFNKZWlQZ0luV0tJb1QtRHlwRkpPYnhqdDNqRFlvXzNKUVhS?oc=5\" target=\"_blank\">El Estatuto de los Trabajadores y el BOE lo hacen oficial: si trabajas este miércoles 24 junio, festivo local en 14 municipios, recibirás una gran compensación económica a cambio</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Provincia</font>",
     "fecha": "2026-06-22T07:50:55Z",
-    "fuente": "Novedades Legales (España)",
-    "categoria": "Legislación"
-  },
-  {
-    "titulo": "Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\" - Servicios Emergencia",
-    "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5\" target=\"_blank\">Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Servicios Emergencia</font>",
-    "fecha": "2026-06-24T10:38:00Z",
     "fuente": "Novedades Legales (España)",
     "categoria": "Legislación"
   },
@@ -184,6 +184,14 @@ const window_news_data = [
     "categoria": "Mercado"
   },
   {
+    "titulo": "Directivos y expertos analizan en El Tormes los desafíos de la Inteligencia Artificial en la gestión de personas (Fotos) - SALAMANCArtv AL DÍA",
+    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNRDRxRUdXR21rb3hUU2FjVzBDRGQyWDVMclhUS0dlX1Etci1mYVpZaGx5X3RBcWE0Ump6eGc3S25kWm1wd2diZXg5MzR0ZE9kYjllQngxRUp3SnBaaDhLR0FyaGprNHBNYlI1cDFJVDJtYmtwdmtlNy1fUTIxd0tGUnpaVjNtNXdib2ROTmVMU1lRc2JxdHJldkVsS19MQkYySXptMzFBaHk5dDNfM3lDUWhWOHoxd1lZY29INk1RN3dTU2ZNME9RMmV5ZXFqYkdJY2phYWZQaTdHMjR5R1ZlSW9VVktCUzdUeFNLZ3lyN2hoQ2VjcFpXemRCZWZsYmg2Ui1JUmR1ZmVlYzA?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMiiwJBVV95cUxNRDRxRUdXR21rb3hUU2FjVzBDRGQyWDVMclhUS0dlX1Etci1mYVpZaGx5X3RBcWE0Ump6eGc3S25kWm1wd2diZXg5MzR0ZE9kYjllQngxRUp3SnBaaDhLR0FyaGprNHBNYlI1cDFJVDJtYmtwdmtlNy1fUTIxd0tGUnpaVjNtNXdib2ROTmVMU1lRc2JxdHJldkVsS19MQkYySXptMzFBaHk5dDNfM3lDUWhWOHoxd1lZY29INk1RN3dTU2ZNME9RMmV5ZXFqYkdJY2phYWZQaTdHMjR5R1ZlSW9VVktCUzdUeFNLZ3lyN2hoQ2VjcFpXemRCZWZsYmg2Ui1JUmR1ZmVlYzA?oc=5\" target=\"_blank\">Directivos y expertos analizan en El Tormes los desafíos de la Inteligencia Artificial en la gestión de personas (Fotos)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SALAMANCArtv AL DÍA</font>",
+    "fecha": "2026-06-24T17:30:00Z",
+    "fuente": "Panorama Nacional RRHH",
+    "categoria": "Mercado"
+  },
+  {
     "titulo": "Iberdrola sustituye a su jefe de Recursos Humanos en plena huelga por el convenio - CapitalMadrid",
     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOY3RfRXNOd0NxX3NIRldBUGdfN1lSMzlwNXZmdGdHNWR2M0N2WUtCV0VrekVPeV9Xcnh1dzFKWGhURTc4VmFnbzUyNy1DODVnWklqXzczTEZtem51dEVnTUVOV3lZampxRi1QZ2F0dUg5Zjl2RzJ0VkdJVGVMaUdqd2xLV296Rlo5TzZ5eFY4R2RKaDBkUF9RUjRrdXhFTkZWOHlKQmdxSkkzVktxYW15S3dpaWhzWDFQaVFFNThxZHFTcjVuU3pRM3R0MnM?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOY3RfRXNOd0NxX3NIRldBUGdfN1lSMzlwNXZmdGdHNWR2M0N2WUtCV0VrekVPeV9Xcnh1dzFKWGhURTc4VmFnbzUyNy1DODVnWklqXzczTEZtem51dEVnTUVOV3lZampxRi1QZ2F0dUg5Zjl2RzJ0VkdJVGVMaUdqd2xLV296Rlo5TzZ5eFY4R2RKaDBkUF9RUjRrdXhFTkZWOHlKQmdxSkkzVktxYW15S3dpaWhzWDFQaVFFNThxZHFTcjVuU3pRM3R0MnM?oc=5\" target=\"_blank\">Iberdrola sustituye a su jefe de Recursos Humanos en plena huelga por el convenio</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CapitalMadrid</font>",
@@ -212,14 +220,6 @@ const window_news_data = [
     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPZXFrWXU0LVhzQ0o2RzBVZDlELTJnT1cxQ1JFeFBsTzNUaldBOG5VMmRYY3ZNMGxiZzFrNDZkQ3M0YmI1LXlySVNOSWdsVEQxdzI1V3dxVFdYa2ZPNGtzTU5Yc3NwVDRDQTloTjhQdlRrajhvZFY1Ql9mNEV3WEZGMURhcGRWN01VTFhoYklfTzhWQVZkd3BLVWdtcU5XOUtiOFdKdnR6WU9yaHNfOWlPdHVJbzYxMUFfVktXNVc5ejlMbU5jMHUyWEJ3M2Vjc3dwMkN4RVk5SGNUZlhzRk5fdDAxSGR6TFBGeWJfbzhjZWQ0TEZqVlQyWXg0czVQeS05S0xQUkZtWWVVbHkyUE05bmpyRW1jQzk1Qk5N0gGgAkFVX3lxTE5qbXoweDA0TmdpZHNLei01cV96Y0RmdnhWc3E5OGpFRENvNWx2TU1wSDh2OVZWSnE1WDZSVXJkM3hHeU9WYkg1Sjc4QURBRFAzLTIyUTAxOWcwU0cwaHdlUUZ5V3VrUFBHOGg0TVdIMGV6UkFfc2hnUkRXVTNkb0I0QlBOeDFFdDhIQXRtY3NuUTM5STRGOVo2TlZoaWdqMXA3VkQ1SHgzM2wyOWxVanNkUU9iMUdMOUZTZWJQQXpNa1NuczRob0NfSEtwZzQ2MmNzWUNic0NvZWszV1MtN0VaSFlFc1lCNVRiOE9SMllwdVBTS0RIRUZVbTRvT182dG4yUTZIQUpvSnpRN3g1Zi12QU5DUnRXakgzRUVGV0p2Yw?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPZXFrWXU0LVhzQ0o2RzBVZDlELTJnT1cxQ1JFeFBsTzNUaldBOG5VMmRYY3ZNMGxiZzFrNDZkQ3M0YmI1LXlySVNOSWdsVEQxdzI1V3dxVFdYa2ZPNGtzTU5Yc3NwVDRDQTloTjhQdlRrajhvZFY1Ql9mNEV3WEZGMURhcGRWN01VTFhoYklfTzhWQVZkd3BLVWdtcU5XOUtiOFdKdnR6WU9yaHNfOWlPdHVJbzYxMUFfVktXNVc5ejlMbU5jMHUyWEJ3M2Vjc3dwMkN4RVk5SGNUZlhzRk5fdDAxSGR6TFBGeWJfbzhjZWQ0TEZqVlQyWXg0czVQeS05S0xQUkZtWWVVbHkyUE05bmpyRW1jQzk1Qk5N0gGgAkFVX3lxTE5qbXoweDA0TmdpZHNLei01cV96Y0RmdnhWc3E5OGpFRENvNWx2TU1wSDh2OVZWSnE1WDZSVXJkM3hHeU9WYkg1Sjc4QURBRFAzLTIyUTAxOWcwU0cwaHdlUUZ5V3VrUFBHOGg0TVdIMGV6UkFfc2hnUkRXVTNkb0I0QlBOeDFFdDhIQXRtY3NuUTM5STRGOVo2TlZoaWdqMXA3VkQ1SHgzM2wyOWxVanNkUU9iMUdMOUZTZWJQQXpNa1NuczRob0NfSEtwZzQ2MmNzWUNic0NvZWszV1MtN0VaSFlFc1lCNVRiOE9SMllwdVBTS0RIRUZVbTRvT182dG4yUTZIQUpvSnpRN3g1Zi12QU5DUnRXakgzRUVGV0p2Yw?oc=5\" target=\"_blank\">Inforges y la cátedra Dirección Humana de la UMU abordan cómo afectará la IA en los Recursos Humanos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Murciadiario</font>",
     "fecha": "2026-06-19T11:31:27Z",
-    "fuente": "Panorama Nacional RRHH",
-    "categoria": "Mercado"
-  },
-  {
-    "titulo": "Resolución de 28 de abril de 2026, aprobada por la Comisión Mixta para las Relaciones con el Tribunal de Cuentas, en relación con el Informe de fiscalización de seguimiento de las recomendaciones incluidas en el Informe de fiscalización del área de recur - Derecho.com",
-    "url": "https://news.google.com/rss/articles/CBMimwRBVV95cUxPNnh1QlROUFJyamhaa1dZWXRLS1RVZ2h4QUV3b0FpT20xX2ZPX3hoTUpQcGhfeXFsNmRubWdQRVFOal9CdG1QUEZQaVMzV1hNYWdvbFU5VG51LUctdW9GZ1FGLWdydUZZY1FpYTlTLUdoOHhYbVVUNjZwa3R1T0hSMEdVUnpwdnozUHltRmd6ZFhGNERzRU5IaFdVTTdUUDZ2QmRXZ1JFUjNDZC1NNGd2eUZVTWVZU2xGLWtXcXZEVVRMX0NxSWlhbUJKWTh3RFo1RmZRcHd5RjdjNDh1UF9OenIyQXNWcHR2SGFxOXl4eG9vOW16YUNvR1M5RTZObDFpX2lPVlNvWmFOaGM5YnBsT2JrX2dmQnB2aVJTcjNkUHdkVkJTNzZvZ1Q4azNxWk81bU9vM2Y0TDk0eDIxQ2V6cmFZNzRXMXh6UE9rbFZ1LTBiRWRNUlpMdGNvUzFRMlVIQWFVdDJHX2owc2dHallndVhsRnJvVFA3OWljMERjLUprdUdGNTFhM3hmSHZFanRMS1JqT0lURjZMdG9RM29XVnNjMWJoMWJsUnV3ZTVhWUdubV9JTkt5Um5ZejBPNjVneTZXV1NvZFV5OXZ4RFNwd0JONzQyWm9jT3puYW1VNVJmeUY4QmtKcGFwTDlIQnpWUklmQjVVYzFkQzBxX19EVklRdFRmYzdPV0FrT3NsdnRMM0JWTTAtSDE0dw?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMimwRBVV95cUxPNnh1QlROUFJyamhaa1dZWXRLS1RVZ2h4QUV3b0FpT20xX2ZPX3hoTUpQcGhfeXFsNmRubWdQRVFOal9CdG1QUEZQaVMzV1hNYWdvbFU5VG51LUctdW9GZ1FGLWdydUZZY1FpYTlTLUdoOHhYbVVUNjZwa3R1T0hSMEdVUnpwdnozUHltRmd6ZFhGNERzRU5IaFdVTTdUUDZ2QmRXZ1JFUjNDZC1NNGd2eUZVTWVZU2xGLWtXcXZEVVRMX0NxSWlhbUJKWTh3RFo1RmZRcHd5RjdjNDh1UF9OenIyQXNWcHR2SGFxOXl4eG9vOW16YUNvR1M5RTZObDFpX2lPVlNvWmFOaGM5YnBsT2JrX2dmQnB2aVJTcjNkUHdkVkJTNzZvZ1Q4azNxWk81bU9vM2Y0TDk0eDIxQ2V6cmFZNzRXMXh6UE9rbFZ1LTBiRWRNUlpMdGNvUzFRMlVIQWFVdDJHX2owc2dHallndVhsRnJvVFA3OWljMERjLUprdUdGNTFhM3hmSHZFanRMS1JqT0lURjZMdG9RM29XVnNjMWJoMWJsUnV3ZTVhWUdubV9JTkt5Um5ZejBPNjVneTZXV1NvZFV5OXZ4RFNwd0JONzQyWm9jT3puYW1VNVJmeUY4QmtKcGFwTDlIQnpWUklmQjVVYzFkQzBxX19EVklRdFRmYzdPV0FrT3NsdnRMM0JWTTAtSDE0dw?oc=5\" target=\"_blank\">Resolución de 28 de abril de 2026, aprobada por la Comisión Mixta para las Relaciones con el Tribunal de Cuentas, en relación con el Informe de fiscalización de seguimiento de las recomendaciones incluidas en el Informe de fiscalización del área de recur</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Derecho.com</font>",
-    "fecha": "2026-06-24T07:03:37Z",
     "fuente": "Panorama Nacional RRHH",
     "categoria": "Mercado"
   },
@@ -276,6 +276,14 @@ const window_news_data = [
     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcm1SelQ0ZHVDdk5jbUdPNmxreFBHaWJXc1BIUkJERm5EWWZaa2dYMnVMdXJLSlM2bkM0TTNjTi1ZSWJ0WW9MRE5GZUZsek1ISWZTTlZscnBwTy1paVlMNHRLZ211ZnZKdHYxakxvVUxyUzRWRkRDQ1liSXI1WWJ0QlpyWkYyWDdRUzNtMWxMaHB4V0JfazVhNFFGVENabkQzTlA3Y0hkNkswT21aYXJ0LVlmbUVTRkp6aVhXaHRpT2FWazBRd3RtSzNpZG44cmc?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxPcm1SelQ0ZHVDdk5jbUdPNmxreFBHaWJXc1BIUkJERm5EWWZaa2dYMnVMdXJLSlM2bkM0TTNjTi1ZSWJ0WW9MRE5GZUZsek1ISWZTTlZscnBwTy1paVlMNHRLZ211ZnZKdHYxakxvVUxyUzRWRkRDQ1liSXI1WWJ0QlpyWkYyWDdRUzNtMWxMaHB4V0JfazVhNFFGVENabkQzTlA3Y0hkNkswT21aYXJ0LVlmbUVTRkp6aVhXaHRpT2FWazBRd3RtSzNpZG44cmc?oc=5\" target=\"_blank\">Manpower reúne a más de 80 expertos en Zaragoza para debatir sobre absentismo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">RRHHDigital</font>",
     "fecha": "2026-06-22T02:17:07Z",
+    "fuente": "Actualidad ETTs",
+    "categoria": "ETTs"
+  },
+  {
+    "titulo": "Las empresas encaran el reto de las bajas laborales: \"O tienes un modelo 'sexy' o el absentismo es alto\" - El Periódico",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaU5GaTRMeU9fSGFkYTNnWTlUemZ6YlU3NG5lWUhqMmpyQVIzXzhwVFpGUzRaZ2xlSUVBTnBOaGVqVy1rX2Y0QncySmlWRnpZSlUzeHduY3pCeTlIQktYTWh2NGV4WEsycWVlVmRLYU45YmhOOUxVbEFodWwwM2c1QlpXb2Mtd2NKZ0VESnVXMzV6SkFhYzZLaGhrTW5fUjJYTVNBOEE5V294dzRPanB6OXJ0OGRRcHRDT3VKRU4wSFFyeERjQ0HSAcYBQVVfeXFMTVNXXzlTU1BHYnRmV05Gb1lwRmwyYTQ2VV85dDdrTGlEdG5KSXVXMFBkV2p6V2kyUWEycDJUNFhtNXJSbm50amJQTk9SVlE0MWVldlNsYWFfMC1kWlFJTllOcVV2NVozVm5pZllTOGlLUEx2RVk4bTlDWVFJaFZEMF9WM0tqVTRGTjByUHpuTXRsSC03YVkyRkRlMjM0anRvZ1NKUG51eXEyVUFPQ0tOUXNpZUdodWZodzRXUnBuTThXWUlOXzNR?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOaU5GaTRMeU9fSGFkYTNnWTlUemZ6YlU3NG5lWUhqMmpyQVIzXzhwVFpGUzRaZ2xlSUVBTnBOaGVqVy1rX2Y0QncySmlWRnpZSlUzeHduY3pCeTlIQktYTWh2NGV4WEsycWVlVmRLYU45YmhOOUxVbEFodWwwM2c1QlpXb2Mtd2NKZ0VESnVXMzV6SkFhYzZLaGhrTW5fUjJYTVNBOEE5V294dzRPanB6OXJ0OGRRcHRDT3VKRU4wSFFyeERjQ0HSAcYBQVVfeXFMTVNXXzlTU1BHYnRmV05Gb1lwRmwyYTQ2VV85dDdrTGlEdG5KSXVXMFBkV2p6V2kyUWEycDJUNFhtNXJSbm50amJQTk9SVlE0MWVldlNsYWFfMC1kWlFJTllOcVV2NVozVm5pZllTOGlLUEx2RVk4bTlDWVFJaFZEMF9WM0tqVTRGTjByUHpuTXRsSC03YVkyRkRlMjM0anRvZ1NKUG51eXEyVUFPQ0tOUXNpZUdodWZodzRXUnBuTThXWUlOXzNR?oc=5\" target=\"_blank\">Las empresas encaran el reto de las bajas laborales: \"O tienes un modelo 'sexy' o el absentismo es alto\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Periódico</font>",
+    "fecha": "2026-06-18T14:12:45Z",
     "fuente": "Actualidad ETTs",
     "categoria": "ETTs"
   },
@@ -348,14 +356,6 @@ const window_news_data = [
     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ21GREVBbFRoMDA5RFBucjZsVUFEQmUwXzM4elYxNmQ2cllXVUltcS1PbVZIMkJmMGdsVWF5OHBnZzhlUXROQWtkRURXMGxjMkZVUnJxVzdRTGhHa3V1RWNuT2UyOTlhNmpwLW1SN3ZlYXl6eXhJTjlsaldHem4zeWF0aDFERmdlSWJqS0RQWnlRUS1HcHhSaVp4Z2prZG8wVTBPVDRB?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ21GREVBbFRoMDA5RFBucjZsVUFEQmUwXzM4elYxNmQ2cllXVUltcS1PbVZIMkJmMGdsVWF5OHBnZzhlUXROQWtkRURXMGxjMkZVUnJxVzdRTGhHa3V1RWNuT2UyOTlhNmpwLW1SN3ZlYXl6eXhJTjlsaldHem4zeWF0aDFERmdlSWJqS0RQWnlRUS1HcHhSaVp4Z2prZG8wVTBPVDRB?oc=5\" target=\"_blank\">Becas de Adecco para estudiantes con discapacidad para el curso 2026-27</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mujer y MADRE hoy</font>",
     "fecha": "2026-06-24T07:59:39Z",
-    "fuente": "Actualidad ETTs",
-    "categoria": "ETTs"
-  },
-  {
-    "titulo": "Absentismo En La Cadena De Proveedores De Automoción - Adecco Institute",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV2Jjc0FfaDZCcjVRcGdsbWdvd1JDckRDTEtZX01zNU5FODBXVmt3cmV0amJYYlVSNlM5dTlBWkZ4UzdUUlJNcWkzYjRIUjk5ak04eHhBbzdubFZwV3B0eVp5WnM5U29qUzA4dVBMQVpaRjNBNUc0Vnp4MTktYkV2RU5CWWNkbHRE?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV2Jjc0FfaDZCcjVRcGdsbWdvd1JDckRDTEtZX01zNU5FODBXVmt3cmV0amJYYlVSNlM5dTlBWkZ4UzdUUlJNcWkzYjRIUjk5ak04eHhBbzdubFZwV3B0eVp5WnM5U29qUzA4dVBMQVpaRjNBNUc0Vnp4MTktYkV2RU5CWWNkbHRE?oc=5\" target=\"_blank\">Absentismo En La Cadena De Proveedores De Automoción</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Adecco Institute</font>",
-    "fecha": "2026-06-22T10:26:45Z",
     "fuente": "Actualidad ETTs",
     "categoria": "ETTs"
   }
