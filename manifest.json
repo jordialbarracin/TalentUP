@@ -1,0 +1,16 @@
+{
+  "name": "TalentUP Intelligence",
+  "short_name": "TalentUP",
+  "description": "Plataforma de Inteligencia y Radar B2B",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
