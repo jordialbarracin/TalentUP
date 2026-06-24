@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sortedArray.length === 0) {
             grid.innerHTML = `
                 <div class="col-span-full text-center py-24 bg-white/50 backdrop-blur-md rounded-[2rem] border-2 border-dashed border-slate-300">
-                    <p class="text-slate-500 font-mono text-sm tracking-widest uppercase">No data found in cluster.</p>
-                </div>`;
+                    <p class="text-slate-500 font-mono text-sm tracking-widest uppercase mt-4">No hay datos en esta categoría.</p>
+                </div>
+            `;
             return;
         }
 
@@ -164,9 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Título dinámico
         if (sectionTitle) {
             if (category === 'todas') {
-                sectionTitle.innerHTML = 'Inteligencia de <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue via-google-red to-google-yellow">Recursos Humanos</span>';
+                sectionTitle.innerHTML = `<span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">Todas las Noticias</span>`;
             } else {
-                sectionTitle.innerHTML = `Cluster de Datos: <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">${category}</span>`;
+                sectionTitle.innerHTML = `<span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">${category}</span>`;
             }
         }
         

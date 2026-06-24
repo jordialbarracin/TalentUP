@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sortedArray.length === 0) {
             grid.innerHTML = `
                 <div class="col-span-full text-center py-24 bg-white/50 backdrop-blur-md rounded-[2rem] border-2 border-dashed border-slate-300">
-                    <p class="text-slate-500 font-mono text-sm tracking-widest uppercase">No data found in cluster.</p>
-                </div>`;
+                    <p class="text-slate-500 font-mono text-sm tracking-widest uppercase mt-4">No hay datos en esta categoría.</p>
+                </div>
+            `;
             return;
         }
 
@@ -195,9 +196,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sectionTitle) {
             let locTitle = currentLocation !== 'todas' ? ` - ${currentLocation}` : '';
             if (currentCategory === 'todas') {
-                sectionTitle.innerHTML = `Radar de <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue via-google-red to-google-yellow">Leads B2B</span>${locTitle}`;
+                sectionTitle.innerHTML = `<span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">Todas las Alertas</span>`;
             } else {
-                sectionTitle.innerHTML = `Cluster de Datos: <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">${currentCategory}</span>${locTitle}`;
+                sectionTitle.innerHTML = `<span class="text-transparent bg-clip-text bg-gradient-to-r from-google-blue to-google-green">${currentCategory}</span>${locTitle}`;
             }
         }
         
