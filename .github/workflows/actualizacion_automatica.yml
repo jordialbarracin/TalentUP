@@ -1,0 +1,46 @@
+name: Actualización de Inteligencia (TalentUP)
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar_datos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python -m spacy download es_core_news_sm
+
+    - name: Ejecutar motor de inteligencia
+      run: python rastreador.py
+
+    - name: Commit y Push de los nuevos datos
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        git add datos/
+        git add hemeroteca/
+        # Check if there are any changes to commit
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "🤖 Auto-Update: Nuevos Leads B2B y Noticias detectados"
+          git push
+        else
+          echo "No hay datos nuevos para actualizar."
+        fi
