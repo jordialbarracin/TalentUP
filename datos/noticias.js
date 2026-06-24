@@ -80,18 +80,18 @@ const window_news_data = [
     "categoria": "Legislación"
   },
   {
-    "titulo": "Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales - Forbes España",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5\" target=\"_blank\">Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Forbes España</font>",
-    "fecha": "2026-06-18T11:09:23Z",
-    "fuente": "Novedades Legales (España)",
-    "categoria": "Legislación"
-  },
-  {
     "titulo": "Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\" - Servicios Emergencia",
     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPbWRzM2R2Nlhza3QxTlJjRVBxZDlnT3ZUTlFLYmtZRnlPVEdPd3Q1allsME94UHNad0hkMXpieHFBWkw5WGMwY1FMNU15Y3pqbGtmeFVIb3IxOFFyamxpbXVZLWplZURiRThzamo0S21oNjRyVjZjZUNTQmhIdVBRQ0ljSDlMWk4wX3doOWV2dlBSZ2d6QTE4d1FlYXpSSm9DRGxHNkhidFBsbkhJWkJmLWlncGYzOVJ6OHJQcF9UbXViT0dkeThzZzRjeHZhVlJjbTB1TXF5ckowYWdmNkdFOVdJMzV5Mjl6RUEwbFcyajZUdS15b3NnZnNKNlB5NkpDb25QVTBKVXFENUVXMkhDVExDamtKb1JXalNN?oc=5\" target=\"_blank\">Los bomberos forestales se manifestarán frente al Ministerio de Trabajo para exigir responsabilidades \"antes de que haya que lamentar otra tragedia\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Servicios Emergencia</font>",
     "fecha": "2026-06-24T10:38:00Z",
+    "fuente": "Novedades Legales (España)",
+    "categoria": "Legislación"
+  },
+  {
+    "titulo": "Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales - Forbes España",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc2Z5MTMzNW5TYWhRS3dCRlVrenFxa3NrRzFjM3hrUGM3OUdJS0ViNlNxT25hTDNVcmp6U2I0ek9Db0dZaG9uNTl5cGRoOVU3MkFldnNGbDNtc1dEQmxxMlBpRVJxUDBFd25sMVdEWXNpOFhMbERtaHdKWGY2ZjduNk9wS1BLVVZhSmxRUGgzNDgzdHpDSmxKMFZ1enZJZ2FXaGJCVkNodC02RE40LWNHZm9uX2NvNF9TR0p5bHkzZ0wyeHdhNEIzMlpGaEVBQjU1Zms0MVNLLV9obXFUcXc?oc=5\" target=\"_blank\">Banco de España vincula la reforma laboral con una mayor productividad en empresas con contratos temporales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Forbes España</font>",
+    "fecha": "2026-06-18T11:09:23Z",
     "fuente": "Novedades Legales (España)",
     "categoria": "Legislación"
   },
@@ -132,6 +132,14 @@ const window_news_data = [
     "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPaVpnWjh2RE9VemdMVXVGTmhxOXkyTG4tbzRYSXNRVndmMGZWWllmcFlqeS1VM19BOFNrekJjUnd3R2I5TV81Nkw1U0xkek0wT1BwaVZaV3ZEamNBUWVpZUtxeEMwU2tvaC1VQXpOQ212NlpYUDNnSURYMUNmS29kX1hPVWpDZkl6M3F2Z2tOZGxPZVFHN2U5MTVuVlFXazBEREV5S2ZHRUg4N1JTUEJ4N2h3dEc1Vm9EaGExcGJFQ0lCS3Y4MDlLb2x2NzR5amU0NC1FNGJ3TXhjZDItbnNaZUMxZkNDZk1iU2JUZFdjRlM0blBnWnlnV3dCeWJjd0RaOTRHQ00wSWdnakUtUTQ2ZGtpOEZYQQ?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMilgJBVV95cUxPaVpnWjh2RE9VemdMVXVGTmhxOXkyTG4tbzRYSXNRVndmMGZWWllmcFlqeS1VM19BOFNrekJjUnd3R2I5TV81Nkw1U0xkek0wT1BwaVZaV3ZEamNBUWVpZUtxeEMwU2tvaC1VQXpOQ212NlpYUDNnSURYMUNmS29kX1hPVWpDZkl6M3F2Z2tOZGxPZVFHN2U5MTVuVlFXazBEREV5S2ZHRUg4N1JTUEJ4N2h3dEc1Vm9EaGExcGJFQ0lCS3Y4MDlLb2x2NzR5amU0NC1FNGJ3TXhjZDItbnNaZUMxZkNDZk1iU2JUZFdjRlM0blBnWnlnV3dCeWJjd0RaOTRHQ00wSWdnakUtUTQ2ZGtpOEZYQQ?oc=5\" target=\"_blank\">XVI Conferencia Científica de Investigación en Psicología de Recursos Humanos</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">uv.es</font>",
     "fecha": "2026-06-23T12:28:43Z",
+    "fuente": "Panorama Nacional RRHH",
+    "categoria": "Mercado"
+  },
+  {
+    "titulo": "Quince jóvenes finalizan en Aljaraque un programa de formación en recursos humanos con prácticas remuneradas - Huelva Buenas Noticias",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVGdGSVg5TTQ3Wml5X2JlYS01MDRiS1BtY3ZLMWI1d2ZyTjJyTVhFR0hDTm9HNnpPa3h5R2NtNUN1ZnFHZVBWZGZCZ2gxMUZTSDFrTDdmdU5YTEwxNVdHVXh6d2ZSbWFpNVk0VXh5UEVheHFIcktsMTRuR0ZjRDhjMVBCMnQ1bzBEbW9HSWhaczlteVh4OThkU2ExeFdpNW90LWNYeTBNUzA?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVGdGSVg5TTQ3Wml5X2JlYS01MDRiS1BtY3ZLMWI1d2ZyTjJyTVhFR0hDTm9HNnpPa3h5R2NtNUN1ZnFHZVBWZGZCZ2gxMUZTSDFrTDdmdU5YTEwxNVdHVXh6d2ZSbWFpNVk0VXh5UEVheHFIcktsMTRuR0ZjRDhjMVBCMnQ1bzBEbW9HSWhaczlteVh4OThkU2ExeFdpNW90LWNYeTBNUzA?oc=5\" target=\"_blank\">Quince jóvenes finalizan en Aljaraque un programa de formación en recursos humanos con prácticas remuneradas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Huelva Buenas Noticias</font>",
+    "fecha": "2026-06-18T12:23:06Z",
     "fuente": "Panorama Nacional RRHH",
     "categoria": "Mercado"
   },
@@ -232,14 +240,6 @@ const window_news_data = [
     "categoria": "Mercado"
   },
   {
-    "titulo": "2 de julio: IA, cultura y longevidad en el programa del Encuentro Foro Recursos Humanos Málaga - Foro Recursos Humanos",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XcnVEU1AwSkdSYmhQV1hGYm9saS1lcmp6aG8xWVBUTGZDdU14ZVFYU09tbWlKNnE5TF9TUkRvWUpqOEh4MlZTb0JyeXlFRXd2YWVxTm92VS13LVBLZERiS3ZoSUZzNGtINU5EZ0FZdkNOV3I3bUE?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5XcnVEU1AwSkdSYmhQV1hGYm9saS1lcmp6aG8xWVBUTGZDdU14ZVFYU09tbWlKNnE5TF9TUkRvWUpqOEh4MlZTb0JyeXlFRXd2YWVxTm92VS13LVBLZERiS3ZoSUZzNGtINU5EZ0FZdkNOV3I3bUE?oc=5\" target=\"_blank\">2 de julio: IA, cultura y longevidad en el programa del Encuentro Foro Recursos Humanos Málaga</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Foro Recursos Humanos</font>",
-    "fecha": "2026-06-19T12:58:15Z",
-    "fuente": "Panorama Nacional RRHH",
-    "categoria": "Mercado"
-  },
-  {
     "titulo": "El Absentismo Laboral Cerró 2025 En El 7,68% (+0,42 P.p. Interanuales), Máximo Histórico - Adecco Institute",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2tSUWhEV0NBTTZvdC0tYzNWNko3WTVWcHJ0b3hkVjBEZjdEYTYxSWZ1NzdLVUNIMTBoeGNsS1BmaXd0aG5laTFQOEI4WV9OSm1WTDJRS0hMbHY5UTNRczlTRi1ubFMtWlVkUnVQNUg0SnVMZzVWNVliTFRxR1FBZXg5NFdyVlpETHRPZU9tRmExbEZXdDhCVXpFQXpWeWg2Z3N3ejc0UmNvVnB3QkVuUE9NS2FDQTA?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2tSUWhEV0NBTTZvdC0tYzNWNko3WTVWcHJ0b3hkVjBEZjdEYTYxSWZ1NzdLVUNIMTBoeGNsS1BmaXd0aG5laTFQOEI4WV9OSm1WTDJRS0hMbHY5UTNRczlTRi1ubFMtWlVkUnVQNUg0SnVMZzVWNVliTFRxR1FBZXg5NFdyVlpETHRPZU9tRmExbEZXdDhCVXpFQXpWeWg2Z3N3ejc0UmNvVnB3QkVuUE9NS2FDQTA?oc=5\" target=\"_blank\">El Absentismo Laboral Cerró 2025 En El 7,68% (+0,42 P.p. Interanuales), Máximo Histórico</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Adecco Institute</font>",
@@ -336,18 +336,18 @@ const window_news_data = [
     "categoria": "ETTs"
   },
   {
-    "titulo": "Fundación Randstad reconoce la inclusión en la 21ª edición de sus premios - Servimedia",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY0p6bUl3a3R6cGFZdjV0a3pHZEQ2TWd2ZE9iWF8ycnRoTndqclZnQTd0Nm1TaDk1TUZDZjl6c3Q2cjZfWUtXdlpWY2U5VjRjajR6YUtLYk1LLTByakpMdmgzOTNUdndsNlk5RnZlbExvUng3UU5DdzBIU3RxUkR2ZjMteE1abEpMbmVvUG1iZWk1eXlDMi0zcG9WNTJPazZsV3llRA?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOY0p6bUl3a3R6cGFZdjV0a3pHZEQ2TWd2ZE9iWF8ycnRoTndqclZnQTd0Nm1TaDk1TUZDZjl6c3Q2cjZfWUtXdlpWY2U5VjRjajR6YUtLYk1LLTByakpMdmgzOTNUdndsNlk5RnZlbExvUng3UU5DdzBIU3RxUkR2ZjMteE1abEpMbmVvUG1iZWk1eXlDMi0zcG9WNTJPazZsV3llRA?oc=5\" target=\"_blank\">Fundación Randstad reconoce la inclusión en la 21ª edición de sus premios</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Servimedia</font>",
-    "fecha": "2026-06-18T11:06:00Z",
-    "fuente": "Actualidad ETTs",
-    "categoria": "ETTs"
-  },
-  {
     "titulo": "Los Premios Fundación Randstad reconocen el talento y la inclusión de las personas con discapacidad en su 21ª edición - Corresponsables",
     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTDdYRURaSHBmRG9PbkQwNkF6R1FmUU1paG8zT083WkxXLVdRTjczRlltMGhBTnZCeUY2a0hjZEhsbzBRRElmVGhlaUUzQnR4aGhWQUVZaUU4aWIyR1pteU80UEFhYTJWUHhoSzI4UmJObXBuTXdGTEo5OVgyVldaTklKRGJZcW5ldjBlV1ZGOUhoeDZpMUE?oc=5",
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxNTDdYRURaSHBmRG9PbkQwNkF6R1FmUU1paG8zT083WkxXLVdRTjczRlltMGhBTnZCeUY2a0hjZEhsbzBRRElmVGhlaUUzQnR4aGhWQUVZaUU4aWIyR1pteU80UEFhYTJWUHhoSzI4UmJObXBuTXdGTEo5OVgyVldaTklKRGJZcW5ldjBlV1ZGOUhoeDZpMUE?oc=5\" target=\"_blank\">Los Premios Fundación Randstad reconocen el talento y la inclusión de las personas con discapacidad en su 21ª edición</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Corresponsables</font>",
     "fecha": "2026-06-18T10:19:19Z",
+    "fuente": "Actualidad ETTs",
+    "categoria": "ETTs"
+  },
+  {
+    "titulo": "Fundación Randstad reconoce la inclusión en la 21ª edición de sus premios - Servimedia",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY0p6bUl3a3R6cGFZdjV0a3pHZEQ2TWd2ZE9iWF8ycnRoTndqclZnQTd0Nm1TaDk1TUZDZjl6c3Q2cjZfWUtXdlpWY2U5VjRjajR6YUtLYk1LLTByakpMdmgzOTNUdndsNlk5RnZlbExvUng3UU5DdzBIU3RxUkR2ZjMteE1abEpMbmVvUG1iZWk1eXlDMi0zcG9WNTJPazZsV3llRA?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOY0p6bUl3a3R6cGFZdjV0a3pHZEQ2TWd2ZE9iWF8ycnRoTndqclZnQTd0Nm1TaDk1TUZDZjl6c3Q2cjZfWUtXdlpWY2U5VjRjajR6YUtLYk1LLTByakpMdmgzOTNUdndsNlk5RnZlbExvUng3UU5DdzBIU3RxUkR2ZjMteE1abEpMbmVvUG1iZWk1eXlDMi0zcG9WNTJPazZsV3llRA?oc=5\" target=\"_blank\">Fundación Randstad reconoce la inclusión en la 21ª edición de sus premios</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Servimedia</font>",
+    "fecha": "2026-06-18T11:06:00Z",
     "fuente": "Actualidad ETTs",
     "categoria": "ETTs"
   },

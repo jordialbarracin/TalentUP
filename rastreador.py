@@ -10,6 +10,9 @@ q1 = urllib.parse.quote('intitle:"legislacion laboral" OR "reforma laboral" OR "
 q2 = urllib.parse.quote('"recursos humanos" OR "seleccion de personal" OR "captacion de talento" when:7d')
 q3 = urllib.parse.quote('"empresas de trabajo temporal" OR "ETT" OR Adecco OR Randstad OR Manpower OR Eurofirms when:7d')
 
+q4 = urllib.parse.quote('("abre nueva sede" OR "nuevo centro logístico" OR "nueva fábrica" OR "plan de expansión") AND ("empleo" OR "contratar" OR "plantilla") when:7d')
+q5 = urllib.parse.quote('("ronda de financiación" OR "levantado capital" OR "ronda de inversión") AND (startup OR empresa) when:7d')
+
 FUENTES = [
     {
         "nombre": "Novedades Legales (España)",
@@ -25,6 +28,19 @@ FUENTES = [
         "nombre": "Actualidad ETTs",
         "url": f"https://news.google.com/rss/search?q={q3}&hl=es&gl=ES&ceid=ES:es",
         "categoria": "ETTs"
+    }
+]
+
+FUENTES_LEADS = [
+    {
+        "nombre": "Aperturas y Expansión",
+        "url": f"https://news.google.com/rss/search?q={q4}&hl=es&gl=ES&ceid=ES:es",
+        "categoria": "Expansión"
+    },
+    {
+        "nombre": "Inyecciones de Capital",
+        "url": f"https://news.google.com/rss/search?q={q5}&hl=es&gl=ES&ceid=ES:es",
+        "categoria": "Inversión"
     }
 ]
 
@@ -134,10 +150,27 @@ def main():
         # Guardamos como una variable JS para saltarnos los bloqueos de seguridad del navegador al abrir archivos locales
         f.write("const window_news_data = " + json.dumps(todas_las_noticias, ensure_ascii=False, indent=2) + ";")
     
-    # Generar la hemeroteca en Obsidian
-    generate_obsidian_note(todas_las_noticias)
+    # === SECCION DE LEADS B2B ===
+    todos_los_leads = []
+    print("Iniciando radar de Leads B2B...")
+    for fuente in FUENTES_LEADS:
+        print(f"Rastreando leads: {fuente['nombre']}...")
+        leads = fetch_and_parse_rss(fuente)
+        if leads:
+            todos_los_leads.extend(leads)
+            print(f"- Exito! Extraidos {len(leads)} leads.")
+        else:
+            print("- Fallo la descarga o el feed estaba vacio.")
+            
+    DB_LEADS_PATH = os.path.join(os.path.dirname(__file__), 'datos', 'leads.js')
+    with open(DB_LEADS_PATH, 'w', encoding='utf-8') as f:
+        f.write("const window_leads_data = " + json.dumps(todos_los_leads, ensure_ascii=False, indent=2) + ";")
     
-    print(f"Proceso completado! Se han guardado {len(todas_las_noticias)} noticias en la base de datos local.")
+    # Generar la hemeroteca en Obsidian combinando ambos dataframes
+    todas_las_entradas = todas_las_noticias + todos_los_leads
+    generate_obsidian_note(todas_las_entradas)
+    
+    print(f"Proceso completado! Se han guardado {len(todas_las_noticias)} noticias y {len(todos_los_leads)} leads en la base de datos local.")
 
 if __name__ == '__main__':
     main()
