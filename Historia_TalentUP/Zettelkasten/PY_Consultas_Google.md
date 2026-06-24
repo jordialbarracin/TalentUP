@@ -3,7 +3,7 @@
 **Etiquetas:** #python #osint #google
 
 ## Concepto
-No podemos confiar en que Google News sepa qué es importante en Recursos Humanos por defecto. Tuvimos que usar técnicas de OSINT (Inteligencia de Fuentes Abiertas) inyectando sintaxis booleana directamente en la URL.
+No podemos confiar en que Google News sepa qué es importante en Recursos Humanos por defecto. Tuvimos que usar técnicas de OSINT (Inteligencia de Fuentes Abiertas) inyectando sintaxis booleana directamente en la URL para optimizar los resultados del motor de búsqueda.
 
 ## Anatomía de la Query
 ```python

@@ -7,7 +7,7 @@ Inicialmente, queríamos que `app.js` hiciese una llamada `fetch('datos/noticias
 El problema es que, por motivos de seguridad, los navegadores bloquean el uso de `fetch` a archivos locales (protocolo `file:///`). Esto provocaba un error de CORS (Cross-Origin Resource Sharing) si el usuario abría el archivo `index.html` haciendo doble clic desde el Escritorio.
 
 ## La Solución Magistral
-En lugar de forzar al usuario a levantar un servidor local (`python -m http.server`), hackeamos el formato de la base de datos:
+En lugar de forzar al usuario a levantar un servidor local (`python -m http.server`), adaptamos el formato de la base de datos:
 
 1. El motor de Python ya no genera un `.json` puro.
 2. Genera un archivo `.js` (Javascript) y le asigna los datos JSON a una variable global inmutable:

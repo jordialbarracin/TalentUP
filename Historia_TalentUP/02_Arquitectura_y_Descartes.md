@@ -16,6 +16,6 @@ Decidimos que la única forma de tener control absoluto y 0€ de coste era prog
 
 1. **El Motor (Backend)**: Un pequeño script de Python (`rastreador.py`) usando herramientas nativas.
 2. **La Base de Datos**: ¡No hay servidor de base de datos! El script de Python escupe un archivo llamado `noticias.js` que el navegador puede leer directamente. Esto se llama arquitectura "Flat-file" o "Server-rendered data".
-3. **La Nube (El Orquestador)**: En lugar de dejar el ordenador encendido localmente, usamos **GitHub Actions**. Es una herramienta pensada para testear software, pero la hemos "hackeado" para que ejecute nuestro script de Python cada 6 horas y actualice la web de GitHub Pages.
+3. **La Nube (El Orquestador)**: En lugar de dejar el ordenador encendido localmente, usamos **GitHub Actions**. Es una herramienta pensada para testear software, pero la hemos adaptado para que ejecute nuestro script de Python cada 6 horas y actualice la web de GitHub Pages.
 
 **Conclusión:** Pasamos de un sistema frágil de suscripciones a un ecosistema de código puro, indestructible y totalmente autónomo.

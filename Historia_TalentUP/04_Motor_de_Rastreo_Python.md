@@ -19,10 +19,10 @@ q3 = urllib.parse.quote('"empresas de trabajo temporal" OR "ETT" OR Adecco OR Ra
 ## Manejo de Excepciones
 El script usa la librería `feedparser` y `requests` para descargar los XML. Formatea la fecha y extrae los resúmenes limpiando la basura de HTML que a veces inyectan los periódicos.
 
-## El Truco del Flat-File
+## La Arquitectura Flat-File
 Normalmente, Python guardaría esto en un archivo `.json`. Pero si una web local intenta leer un `.json` con Javascript, el navegador lo bloquea por razones de seguridad (Error CORS). 
 
-¿Nuestro *Hack*? Hacemos que Python guarde los datos como un archivo de Javascript (`noticias.js`) inyectando directamente una variable global:
+¿La Solución Técnica? Hacemos que Python guarde los datos como un archivo de Javascript (`noticias.js`) inyectando directamente una variable global:
 `const window_news_data = [...];`
 
 Así, nuestro Frontend lee los datos instantáneamente como si fuesen parte del propio código fuente de la página. Rápido, seguro y sin base de datos.
