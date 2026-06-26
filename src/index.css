@@ -5,23 +5,73 @@
   --color-google-red: #ea4335;
   --color-google-yellow: #fbbc04;
   --color-google-green: #34a853;
-  --font-sans: 'Outfit', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Custom Box Shadows for Premium SaaS Feel */
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.04);
+  --shadow-glass-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 0 20px rgba(26, 115, 232, 0.05);
+  --shadow-inner-glow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    background-color: var(--color-slate-50);
+    background-color: #f8fafc;
     color: var(--color-slate-900);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  /* Text Selection */
+  ::selection {
+    background-color: rgba(26, 115, 232, 0.2);
+    color: var(--color-slate-900);
   }
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Custom Utilities for Hide Scrollbar */
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Advanced Glassmorphism */
+  .glass-panel {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: var(--shadow-glass), var(--shadow-inner-glow);
+  }
+
+  .glass-panel-hover:hover {
+    box-shadow: var(--shadow-glass-hover), var(--shadow-inner-glow);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.6) 100%);
+    transform: translateY(-4px) scale(1.01);
+  }
+  
+  /* Moving Gradients (Liquid Glass Orbs) */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+  }
 }

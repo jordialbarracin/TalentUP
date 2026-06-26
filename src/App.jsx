@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Sparkles, AlertTriangle, ExternalLink } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Sparkles, AlertCircle, ArrowUpRight, Filter, ChevronRight, Activity } from 'lucide-react';
 import { cn } from './lib/utils';
 
 export default function App() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [category, setCategory] = useState('todas');
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     fetch('./datos/noticias.json')
@@ -26,211 +33,228 @@ export default function App() {
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <div className="animate-pulse flex flex-col items-center">
-          <div className="w-12 h-12 border-4 border-slate-300 border-t-google-blue rounded-full animate-spin"></div>
-          <p className="mt-4 text-slate-500 font-mono tracking-widest uppercase">Cargando Inteligencia...</p>
-        </div>
+        <motion.div 
+          animate={{ scale: [1, 1.1, 1], opacity: [0.5, 1, 0.5] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="flex flex-col items-center gap-4"
+        >
+          <div className="h-16 w-16 bg-gradient-to-br from-google-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-500/30">
+            <span className="text-3xl text-white font-extrabold tracking-tighter">TU</span>
+          </div>
+          <p className="text-slate-400 font-mono tracking-[0.2em] uppercase text-xs">Sincronizando IA...</p>
+        </motion.div>
       </div>
     );
   }
 
-  return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-6 md:p-12 lg:p-24">
-      
-      {/* Header */}
-      <header className="mb-16">
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex flex-col md:flex-row items-center gap-6"
-        >
-          <div className="h-16 w-16 bg-gradient-to-br from-google-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-google-blue/20">
-            <span className="text-3xl text-white font-extrabold tracking-tighter">TU</span>
-          </div>
-          <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-2">
-              TalentUP News
-            </h1>
-            <p className="text-slate-500 font-mono tracking-widest uppercase text-sm">
-              Radar B2B impulsado por Inteligencia Artificial
-            </p>
-          </div>
-        </motion.div>
+  const filteredNews = news.filter(n => category === 'todas' || n.categoria === category);
+  const categories = ['todas', ...new Set(news.map(n => n.categoria))];
 
-        {/* Navigation & Filters */}
+  return (
+    <div className="min-h-screen relative overflow-hidden bg-slate-50 selection:bg-google-blue/20">
+      
+      {/* Liquid Glass Background Orbs */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <motion.div 
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-6"
-        >
-          <nav className="flex flex-wrap gap-2 p-1.5 bg-white/50 backdrop-blur-md border border-slate-200 rounded-full shadow-sm inline-flex">
-            {['todas', 'Legislación', 'Mercado', 'ETTs'].map(cat => (
+          animate={{ 
+            x: [0, 100, 0], 
+            y: [0, -100, 0],
+            scale: [1, 1.2, 1] 
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="orb bg-google-blue w-[40vw] h-[40vw] top-[-10vw] left-[-10vw]"
+        />
+        <motion.div 
+          animate={{ 
+            x: [0, -50, 0], 
+            y: [0, 100, 0],
+            scale: [1, 1.5, 1]
+          }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="orb bg-purple-400 w-[30vw] h-[30vw] bottom-[-5vw] right-[-5vw] opacity-30"
+        />
+        <motion.div 
+          animate={{ 
+            x: [0, 80, 0], 
+            y: [0, 50, 0] 
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+          className="orb bg-teal-300 w-[25vw] h-[25vw] top-[40vh] left-[20vw] opacity-20"
+        />
+      </div>
+
+      {/* Sticky Navbar (Glassmorphic) */}
+      <header className={cn(
+        "fixed top-0 inset-x-0 z-50 transition-all duration-500 border-b border-transparent",
+        scrolled ? "bg-white/70 backdrop-blur-xl border-slate-200/50 shadow-sm py-3" : "bg-transparent py-6"
+      )}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 bg-gradient-to-br from-google-blue to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-google-blue/20">
+              <span className="text-lg text-white font-extrabold tracking-tighter">TU</span>
+            </div>
+            <span className="font-extrabold text-xl tracking-tight text-slate-900 hidden sm:block">TalentUP News</span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <a 
+              href="./legacy_ui/leads.html" 
+              className="group flex items-center gap-2 px-5 py-2.5 bg-slate-900 hover:bg-google-blue text-white rounded-full text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-google-blue/30"
+            >
+              <Activity className="w-4 h-4 text-google-yellow" />
+              <span>Radar B2B</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main className="relative z-10 pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-12">
+        
+        {/* Massive Hero Section */}
+        <div className="mb-20 text-center md:text-left flex flex-col md:flex-row items-end justify-between gap-8">
+          <div className="max-w-3xl">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6 text-balance"
+            >
+              La inteligencia artificial <br className="hidden md:block"/> decodifica el mercado.
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl text-balance"
+            >
+              Monitorizamos miles de fuentes en tiempo real para destilar el impacto y los riesgos del sector RRHH.
+            </motion.p>
+          </div>
+
+          {/* Filter Pills */}
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="flex flex-wrap gap-2 justify-center md:justify-end shrink-0"
+          >
+            {categories.map((cat, i) => (
               <button
                 key={cat}
                 onClick={() => setCategory(cat)}
                 className={cn(
-                  "px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 capitalize",
+                  "px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 capitalize border backdrop-blur-sm",
                   category === cat 
-                    ? "bg-slate-900 text-white shadow-md" 
-                    : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+                    ? "bg-slate-900 text-white border-slate-900 shadow-md" 
+                    : "bg-white/50 text-slate-600 border-slate-200/60 hover:bg-white hover:text-slate-900 hover:border-slate-300"
                 )}
               >
                 {cat}
               </button>
             ))}
-          </nav>
-          
-          <a href="./legacy_ui/leads.html" className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-google-blue to-blue-600 text-white font-bold rounded-full shadow-lg shadow-google-blue/20 hover:shadow-xl transition-all hover:-translate-y-0.5">
-            <Sparkles className="w-4 h-4" />
-            Radar de Leads B2B
-          </a>
-        </motion.div>
-      </header>
+          </motion.div>
+        </div>
 
-      {/* Bento Grid */}
-      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-auto">
-        {news.filter(n => category === 'todas' || n.categoria === category).length === 0 ? (
-          <div className="col-span-full py-20 text-center text-slate-500 font-mono">
-            No hay noticias en esta categoría.
-          </div>
-        ) : (
-          news
-            .filter(n => category === 'todas' || n.categoria === category)
-            .map((item, i) => <BentoCard key={i} item={item} index={i} />)
-        )}
+        {/* Clean SaaS Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <AnimatePresence mode="popLayout">
+            {filteredNews.length === 0 ? (
+              <motion.div 
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                className="col-span-full py-32 flex flex-col items-center justify-center text-slate-400"
+              >
+                <Filter className="w-12 h-12 mb-4 opacity-20" />
+                <p className="font-mono text-sm uppercase tracking-widest">Sin resultados</p>
+              </motion.div>
+            ) : (
+              filteredNews.map((item, i) => (
+                <NewsCard key={item.titulo + i} item={item} index={i} />
+              ))
+            )}
+          </AnimatePresence>
+        </div>
+
       </main>
     </div>
   );
 }
 
-function BentoCard({ item, index }) {
-  const modulo = index % 4;
-  
-  // Format Date
+function NewsCard({ item, index }) {
+  // Parse date elegantly
   let dateStr = item.fecha;
   try {
     const d = new Date(item.fecha);
     if (!isNaN(d.getTime())) {
-      dateStr = d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }).toUpperCase();
+      dateStr = d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
     }
   } catch (e) {}
 
-  // Determine Badge Colors
-  let badgeClasses = "text-slate-600 bg-slate-100 border-slate-200";
-  let dotClasses = "bg-slate-400 shadow-slate-400/50";
-  
+  // Determine Badge Styling
+  let badgeColor = "text-slate-600 bg-slate-100/50 border-slate-200/50 ring-slate-400/20";
   if (item.categoria === "Legislación") {
-    badgeClasses = "text-google-yellow bg-google-yellow/10 border-google-yellow/20";
-    dotClasses = "bg-google-yellow shadow-google-yellow/50";
+    badgeColor = "text-amber-700 bg-amber-50/50 border-amber-200/50 ring-amber-500/20";
   } else if (item.categoria === "Mercado") {
-    badgeClasses = "text-google-blue bg-google-blue/10 border-google-blue/20";
-    dotClasses = "bg-google-blue shadow-google-blue/50";
+    badgeColor = "text-blue-700 bg-blue-50/50 border-blue-200/50 ring-blue-500/20";
   } else if (item.categoria === "ETTs") {
-    badgeClasses = "text-google-green bg-google-green/10 border-google-green/20";
-    dotClasses = "bg-google-green shadow-google-green/50";
+    badgeColor = "text-emerald-700 bg-emerald-50/50 border-emerald-200/50 ring-emerald-500/20";
   }
 
-  // Bento sizing logic
-  let gridClass = "col-span-1 row-span-1";
-  let isLarge = false;
-  let isWide = false;
-  
-  if (modulo === 0) {
-    gridClass = "col-span-1 md:col-span-2 row-span-2";
-    isLarge = true;
-  } else if (modulo === 3) {
-    gridClass = "col-span-1 md:col-span-2 row-span-1";
-    isWide = true;
-  }
-
-  // AI Content processing
+  // Clean AI text
   const tmp = document.createElement("DIV");
   tmp.innerHTML = item.resumen;
   const cleanSummary = tmp.textContent || tmp.innerText || "";
   
   const hasImpact = item.impacto && item.impacto !== "N/A" && item.impacto !== "Error al procesar con IA.";
   const iaImpact = hasImpact ? item.impacto : cleanSummary.substring(0, 150) + "...";
-  const iaRisk = item.riesgos && item.riesgos !== "N/A" ? item.riesgos : "";
+  const iaRisk = item.riesgos && item.riesgos !== "N/A" ? item.riesgos : null;
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: (index % 10) * 0.05 }}
-      whileHover={{ y: -4 }}
+      layout
+      initial={{ opacity: 0, y: 40, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: index * 0.05 }}
+      className="glass-panel glass-panel-hover rounded-[2rem] p-8 flex flex-col h-full group cursor-pointer transition-all duration-500"
       onClick={() => window.open(item.url, '_blank')}
-      className={cn(
-        "group relative bg-white/80 backdrop-blur-xl rounded-[2rem] p-6 border border-slate-200 flex flex-col overflow-hidden shadow-sm hover:shadow-xl cursor-pointer transition-all duration-300",
-        gridClass
-      )}
     >
-      {/* Background Hover Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-slate-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <div className="flex items-center justify-between mb-6">
+        <span className={cn("inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ring-1 ring-inset backdrop-blur-md", badgeColor)}>
+          {item.categoria}
+        </span>
+        <span className="text-xs font-medium text-slate-400">{dateStr}</span>
+      </div>
 
-      <div className="relative z-10 flex flex-col h-full">
-        {/* Meta Header */}
-        <div className="flex items-center justify-between mb-4">
-          <span className={cn("inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border", badgeClasses)}>
-            <span className={cn("w-1.5 h-1.5 rounded-full mr-2 shadow-[0_0_8px_currentColor]", dotClasses)} />
-            {item.categoria}
-          </span>
-          <span className="text-[10px] font-mono text-slate-400 tracking-wider">{dateStr}</span>
+      <h2 className="text-2xl font-bold text-slate-900 leading-[1.3] tracking-tight mb-4 group-hover:text-google-blue transition-colors duration-300">
+        {item.titulo}
+      </h2>
+
+      <div className="flex-1 flex flex-col gap-4 mt-4">
+        {/* AI Insight Box (Glassy) */}
+        <div className="bg-slate-50/60 backdrop-blur-sm rounded-2xl p-5 border border-slate-100/80 shadow-sm group-hover:bg-blue-50/40 group-hover:border-blue-100/50 transition-colors duration-500">
+          <div className="flex items-center gap-2 mb-2">
+            <Sparkles className="w-4 h-4 text-google-blue" />
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-widest">Impacto IA</h4>
+          </div>
+          <p className="text-sm text-slate-600 leading-relaxed font-medium">{iaImpact}</p>
         </div>
-
-        {/* Title */}
-        <h2 className={cn(
-          "font-bold text-slate-900 leading-tight group-hover:text-google-blue transition-colors duration-300 mb-2",
-          isLarge ? "text-2xl md:text-3xl mb-4" : isWide ? "text-xl md:text-2xl" : "text-lg line-clamp-3"
-        )}>
-          {item.titulo}
-        </h2>
-
-        {/* Dynamic Content based on Bento Size */}
-        {isLarge && (
-          <div className="mt-4 flex-1 flex flex-col gap-3">
-            <div className="bg-blue-50/50 rounded-xl p-4 border border-blue-100/50">
-              <h4 className="text-xs font-bold text-blue-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4" />
-                Impacto IA
-              </h4>
-              <p className="text-sm text-slate-700 leading-relaxed">{iaImpact}</p>
-            </div>
-            
-            {hasImpact && iaRisk && (
-              <div className="bg-yellow-50/50 rounded-xl p-4 border border-yellow-100/50">
-                <h4 className="text-xs font-bold text-yellow-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                  <AlertTriangle className="w-4 h-4" />
-                  Riesgo IA
-                </h4>
-                <p className="text-sm text-slate-700 leading-relaxed">{iaRisk}</p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {isWide && (
-          <div className="mt-2 flex-1">
-            <p className="text-sm text-slate-600 line-clamp-2">{iaImpact}</p>
-          </div>
-        )}
-
-        {/* Footer (Source) */}
-        {!isLarge && !isWide && (
-          <div className="mt-auto pt-4 flex justify-between items-center">
-             <span className="text-xs text-slate-400 font-mono uppercase truncate">{item.fuente}</span>
-          </div>
-        )}
         
-        {(isLarge || isWide) && (
-          <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
-            <span className="text-xs text-slate-400 font-mono uppercase">{item.fuente}</span>
-            <div className="h-8 w-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200 group-hover:border-google-blue group-hover:bg-google-blue group-hover:text-white transition-all duration-300">
-              <ExternalLink className="w-4 h-4" />
+        {/* Optional Risk Box */}
+        {hasImpact && iaRisk && (
+          <div className="bg-orange-50/40 backdrop-blur-sm rounded-2xl p-5 border border-orange-100/50 shadow-sm">
+            <div className="flex items-center gap-2 mb-2">
+              <AlertCircle className="w-4 h-4 text-orange-500" />
+              <h4 className="text-xs font-bold text-slate-900 uppercase tracking-widest">Riesgos</h4>
             </div>
+            <p className="text-sm text-slate-600 leading-relaxed">{iaRisk}</p>
           </div>
         )}
+      </div>
+
+      <div className="mt-8 pt-6 border-t border-slate-200/60 flex items-center justify-between">
+        <span className="text-xs font-bold tracking-widest text-slate-400 uppercase">{item.fuente}</span>
+        <div className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-400 group-hover:bg-slate-900 group-hover:text-white group-hover:border-slate-900 transition-all duration-300 transform group-hover:rotate-45">
+          <ArrowUpRight className="w-5 h-5" />
+        </div>
       </div>
     </motion.article>
   );
