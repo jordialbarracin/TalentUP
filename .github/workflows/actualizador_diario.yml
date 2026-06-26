@@ -28,6 +28,8 @@ jobs:
           pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.7.0/es_core_news_sm-3.7.0.tar.gz
 
       - name: Ejecutar Rastreador de Noticias
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python rastreador.py
 
       - name: Comprobar y Subir cambios

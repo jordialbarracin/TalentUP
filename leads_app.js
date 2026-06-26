@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let tagsHtml = cardNlpTags ? `<div class="flex flex-wrap mb-3 mt-[-4px] relative z-20 pointer-events-none">${cardNlpTags}</div>` : '';
 
             const card = document.createElement('article');
-            card.className = `relative bg-white/80 backdrop-blur-md rounded-[2rem] p-6 md:p-8 border border-slate-200 transition-all duration-500 flex flex-col group overflow-hidden shadow-sm hover:shadow-xl ${hoverGlow} cursor-pointer`;
-            card.style.animation = `fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards ${index * 0.05}s`;
+            card.className = `relative bg-white/80 backdrop-blur-md rounded-2xl p-4 md:p-5 border border-slate-200 transition-all duration-300 flex flex-col md:flex-row md:items-center gap-4 group overflow-hidden shadow-sm hover:shadow-md ${hoverGlow} cursor-pointer`;
+            card.style.animation = `fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards ${index * 0.03}s`;
             card.style.opacity = '0';
             
             card.addEventListener('click', () => {
@@ -103,31 +103,31 @@ document.addEventListener('DOMContentLoaded', () => {
             
             card.innerHTML = `
                 <!-- Efecto resplandor sutil interior -->
-                <div class="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 
-                <div class="relative z-10 w-full flex-1">
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest border ${badgeColor}">
-                            <span class="w-1.5 h-1.5 rounded-full mr-2 ${dotColor} shadow-[0_0_8px_currentColor]"></span>
+                <div class="relative z-10 w-full flex flex-col md:flex-row md:items-center gap-4">
+                    <!-- Fecha y Badge -->
+                    <div class="flex items-center gap-3 md:w-48 shrink-0">
+                        <span class="text-[10px] font-mono text-slate-400 tracking-wider whitespace-nowrap">${formattedDate}</span>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border ${badgeColor} whitespace-nowrap">
+                            <span class="w-1.5 h-1.5 rounded-full mr-1.5 ${dotColor} shadow-[0_0_8px_currentColor]"></span>
                             ${item.categoria}
                         </span>
-                        <span class="text-xs font-mono text-slate-400 tracking-wider">${formattedDate}</span>
                     </div>
                     
-                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 leading-snug group-hover:text-google-blue transition-colors duration-300">
-                        <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-                        ${item.titulo}
-                    </h2>
+                    <!-- Titulo -->
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-sm md:text-base font-semibold text-slate-900 leading-snug group-hover:text-google-blue transition-colors duration-300 truncate">
+                            ${item.titulo}
+                        </h2>
+                    </div>
                     
-                    ${tagsHtml}
-                    
-                    <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-8 font-light line-clamp-3">${cleanSummary}</p>
-                    
-                    <div class="pt-6 border-t border-slate-100 flex items-center mt-auto">
-                        <div class="h-8 w-8 rounded-full bg-slate-50 flex items-center justify-center mr-3 border border-slate-200 group-hover:border-slate-300 transition-colors">
-                            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-google-blue transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    <!-- Fuente -->
+                    <div class="md:w-32 shrink-0 flex items-center justify-start md:justify-end">
+                        <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest truncate">${item.fuente}</span>
+                        <div class="hidden md:flex ml-3 h-6 w-6 rounded-full bg-slate-50 items-center justify-center border border-slate-200 group-hover:border-slate-300 transition-colors shrink-0">
+                            <svg class="w-3 h-3 text-slate-400 group-hover:text-google-blue transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
-                        <span class="text-[10px] md:text-xs font-mono text-slate-500 uppercase tracking-widest">${item.fuente}</span>
                     </div>
                 </div>
             `;
@@ -264,7 +264,28 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.getElementById('modal-title').innerText = item.titulo;
         document.getElementById('modal-tags').innerHTML = tagsHtml;
-        document.getElementById('modal-summary').innerText = cleanSummary;
+        
+        // Integrar Insights de la IA en el modal (Ocultar si no hay IA en leads aun)
+        const impactoHTML = item.impacto && item.impacto !== "N/A" ? `
+            <div class="bg-google-blue/10 border border-google-blue/20 rounded-xl p-4 mb-4">
+                <h4 class="text-sm font-bold text-google-blue mb-1 flex items-center"><span class="text-lg mr-2">🎯</span> Impacto en el sector</h4>
+                <p class="text-slate-700 text-sm">${item.impacto}</p>
+            </div>
+        ` : '';
+        
+        const riesgosHTML = item.riesgos && item.riesgos !== "N/A" ? `
+            <div class="bg-google-yellow/10 border border-google-yellow/20 rounded-xl p-4 mb-6">
+                <h4 class="text-sm font-bold text-google-yellow mb-1 flex items-center"><span class="text-lg mr-2">⚠️</span> Riesgos y Oportunidades</h4>
+                <p class="text-slate-700 text-sm">${item.riesgos}</p>
+            </div>
+        ` : '';
+
+        document.getElementById('modal-summary').innerHTML = `
+            ${impactoHTML}
+            ${riesgosHTML}
+            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2 flex items-center"><span class="text-lg mr-2">💡</span> Resumen Ejecutivo</h4>
+            <p class="text-base md:text-lg text-slate-600 leading-relaxed font-light">${cleanSummary}</p>
+        `;
         document.getElementById('modal-source').innerText = item.fuente;
         document.getElementById('modal-link').href = item.url;
 

@@ -6,17 +6,29 @@ import urllib.parse
 from datetime import datetime
 import time
 import spacy
+import trafilatura
+import google.generativeai as genai
 
 try:
     nlp = spacy.load("es_core_news_sm")
 except:
     nlp = None
 
+# Configurar API de Gemini
+GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
+if GEMINI_KEY:
+    genai.configure(api_key=GEMINI_KEY)
+    try:
+        model = genai.GenerativeModel('gemini-2.5-flash')
+    except:
+        model = None
+else:
+    model = None
+
 q1 = urllib.parse.quote('intitle:"legislacion laboral" OR "reforma laboral" OR "estatuto de los trabajadores" OR "ministerio de trabajo" when:7d')
 q2 = urllib.parse.quote('"recursos humanos" OR "seleccion de personal" OR "captacion de talento" when:7d')
 q3 = urllib.parse.quote('"empresas de trabajo temporal" OR "ETT" OR Adecco OR Randstad OR Manpower OR Eurofirms when:7d')
 
-# Consultas OSINT B2B (Señales HR Core)
 q_contratacion = urllib.parse.quote('(contratará OR contrataciones OR "ofertas de empleo" OR "busca personal" OR "creará puestos" OR "amplía plantilla") when:14d')
 q_aperturas = urllib.parse.quote('("nuevo centro" OR "nueva fábrica" OR inaugura OR "nueva tienda" OR apertura) AND (plantilla OR trabajadores OR empleo) when:14d')
 q_reestructuracion = urllib.parse.quote('(ERE OR ERTE OR "despido colectivo" OR "recorte de plantilla") when:14d')
@@ -72,22 +84,67 @@ def extract_entities(text):
     
     return {"empresa": empresa, "ubicacion": ubicacion}
 
-def fetch_and_parse_rss(fuente_info):
+def analizar_con_ia(texto_articulo):
+    """Usa la IA de Gemini para analizar el texto completo y devolver insights clave."""
+    if not model or len(texto_articulo) < 100:
+        return {
+            "impacto": "Análisis IA no disponible o texto insuficiente.",
+            "riesgos": "N/A",
+            "resumen_ia": "Configura la API Key de Gemini en Github Actions para desbloquear la IA."
+        }
+    
+    prompt = f"""
+    Eres un Analista Experto en Recursos Humanos. Lee el siguiente artículo y devuelve ÚNICAMENTE un objeto JSON válido con estas 3 claves:
+    {{
+      "impacto": "1 frase concisa sobre cómo afecta esto al mercado laboral o a los profesionales de RRHH.",
+      "riesgos": "1 frase concisa destacando posibles riesgos, advertencias u oportunidades estratégicas.",
+      "resumen_ia": "Resumen ejecutivo de máximo 2 líneas destacando la esencia del hecho."
+    }}
+    
+    TEXTO DEL ARTÍCULO:
+    {texto_articulo[:8000]}
+    """
+    
+    try:
+        response = model.generate_content(prompt)
+        res_text = response.text.strip()
+        if res_text.startswith("```json"):
+            res_text = res_text[7:]
+        if res_text.startswith("```"):
+            res_text = res_text[3:]
+        if res_text.endswith("```"):
+            res_text = res_text[:-3]
+        
+        datos_ia = json.loads(res_text.strip())
+        return {
+            "impacto": datos_ia.get("impacto", "No extraído"),
+            "riesgos": datos_ia.get("riesgos", "No extraído"),
+            "resumen_ia": datos_ia.get("resumen_ia", "No extraído")
+        }
+    except Exception as e:
+        print(f"Error en IA: {e}")
+        return {
+            "impacto": "Error al procesar con IA.",
+            "riesgos": "Error.",
+            "resumen_ia": "No se pudo generar el análisis."
+        }
+
+def fetch_and_parse_rss(fuente_info, is_news=False):
     noticias = []
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
     }
     try:
         response = requests.get(fuente_info['url'], headers=headers, timeout=15)
-        # Algunos feeds vienen comprimidos o con codificaciones raras, requests lo maneja mejor
         feed = feedparser.parse(response.content)
         
-        for entry in feed.entries[:15]: # Limitar a 15 noticias por fuente para no saturar
+        limite = 30 if is_news else 15
+        
+        for entry in feed.entries[:limite]: 
             title = getattr(entry, 'title', 'Sin título')
             link = getattr(entry, 'link', '#')
             description = getattr(entry, 'description', getattr(entry, 'summary', ''))
             
-            # Intentar formatear la fecha
             pub_date = ''
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
                 pub_date = time.strftime('%Y-%m-%dT%H:%M:%SZ', entry.published_parsed)
@@ -96,19 +153,44 @@ def fetch_and_parse_rss(fuente_info):
             else:
                 pub_date = datetime.now().isoformat()
             
-            # NLP: Extraer Entidades del titular
             entidades = extract_entities(title)
+            
+            impacto = "N/A"
+            riesgos = "N/A"
+            resumen_ia = description
+            
+            if is_news:
+                try:
+                    # Resolvemos la redirección de Google News primero
+                    res_redirect = requests.get(link, headers=headers, timeout=10, allow_redirects=True)
+                    final_url = res_redirect.url
+                    downloaded = trafilatura.fetch_url(final_url)
+                    if downloaded:
+                        texto_completo = trafilatura.extract(downloaded)
+                        if texto_completo:
+                            insights = analizar_con_ia(texto_completo)
+                            impacto = insights["impacto"]
+                            riesgos = insights["riesgos"]
+                            resumen_ia = insights["resumen_ia"]
+                            
+                            if model:
+                                time.sleep(4.1) 
+                except Exception as e:
+                    print(f"Error scraping {link}: {e}")
                 
             noticias.append({
                 "titulo": title,
                 "url": link,
-                "resumen": description,
+                "resumen": resumen_ia if is_news else description,
+                "impacto": impacto,
+                "riesgos": riesgos,
                 "fecha": pub_date,
                 "fuente": fuente_info["nombre"],
                 "categoria": fuente_info["categoria"],
                 "empresa": entidades['empresa'],
                 "ubicacion": entidades['ubicacion']
             })
+            print(f"  + Procesado: {title[:40]}...")
     except Exception as e:
         print(f"Error procesando XML para {fuente_info['nombre']}: {e}")
         
@@ -120,11 +202,9 @@ def generate_obsidian_note(noticias, leads):
         fecha_str = ahora.strftime('%Y-%m-%d_%H-%M')
         fecha_legible = ahora.strftime('%d/%m/%Y a las %H:%M')
         
-        # Ruta a la hemeroteca
         hemeroteca_dir = os.path.join(os.path.dirname(__file__), 'Historia_TalentUP', 'Hemeroteca')
         os.makedirs(hemeroteca_dir, exist_ok=True)
         
-        # 1. NOTICIAS
         filepath_noticias = os.path.join(hemeroteca_dir, f"Noticias_{fecha_str}.md")
         categorias_not = {}
         for n in noticias:
@@ -136,9 +216,10 @@ def generate_obsidian_note(noticias, leads):
                 f.write(f"## 📌 {cat}\n")
                 for item in lista:
                     f.write(f"- [{item['titulo']}]({item['url']})\n")
+                    f.write(f"  - **Impacto**: {item['impacto']}\n")
+                    f.write(f"  - **Riesgos**: {item['riesgos']}\n")
                 f.write("\n")
                 
-        # 2. LEADS
         filepath_leads = os.path.join(hemeroteca_dir, f"Leads_{fecha_str}.md")
         categorias_leads = {}
         for l in leads:
@@ -159,15 +240,15 @@ def generate_obsidian_note(noticias, leads):
 def main():
     todas_las_noticias = []
     
-    print("Iniciando el motor rastreador de Antigravity...")
+    print("Iniciando motor IA avanzado de TalentUP News...")
     print("-" * 50)
     
     for fuente in FUENTES:
-        print(f"Rastreando fuente: {fuente['nombre']}...")
-        noticias = fetch_and_parse_rss(fuente)
+        print(f"Rastreando y analizando fuente: {fuente['nombre']}...")
+        noticias = fetch_and_parse_rss(fuente, is_news=True)
         if noticias:
             todas_las_noticias.extend(noticias)
-            print(f"- Exito! Extraidas {len(noticias)} noticias.")
+            print(f"- Exito! Procesadas {len(noticias)} noticias con IA.")
         else:
             print("- Fallo la descarga o el feed estaba vacio.")
             
@@ -177,7 +258,6 @@ def main():
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     
     with open(DB_PATH, 'w', encoding='utf-8') as f:
-        # Guardamos como una variable JS para saltarnos los bloqueos de seguridad del navegador al abrir archivos locales
         f.write("const window_news_data = " + json.dumps(todas_las_noticias, ensure_ascii=False, indent=2) + ";")
     
     # === SECCION DE LEADS B2B ===
@@ -185,7 +265,7 @@ def main():
     print("Iniciando radar de Leads B2B...")
     for fuente in FUENTES_LEADS:
         print(f"Rastreando leads: {fuente['nombre']}...")
-        leads = fetch_and_parse_rss(fuente)
+        leads = fetch_and_parse_rss(fuente, is_news=False)
         if leads:
             todos_los_leads.extend(leads)
             print(f"- Exito! Extraidos {len(leads)} leads.")
@@ -196,10 +276,9 @@ def main():
     with open(DB_LEADS_PATH, 'w', encoding='utf-8') as f:
         f.write("const window_leads_data = " + json.dumps(todos_los_leads, ensure_ascii=False, indent=2) + ";")
     
-    # Generar la hemeroteca en Obsidian separando ambos dataframes
     generate_obsidian_note(todas_las_noticias, todos_los_leads)
     
-    print(f"Proceso completado! Se han guardado {len(todas_las_noticias)} noticias y {len(todos_los_leads)} leads en la base de datos local.")
+    print(f"Proceso completado! Se han guardado {len(todas_las_noticias)} noticias analizadas y {len(todos_los_leads)} leads.")
 
 if __name__ == '__main__':
     main()
