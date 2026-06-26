@@ -1,6 +1,6 @@
 {
-  "name": "TalentUP Intelligence",
-  "short_name": "TalentUP",
+  "name": "TalentUP News",
+  "short_name": "TalentUP News",
   "description": "Plataforma de Inteligencia y Radar B2B",
   "start_url": "./",
   "display": "standalone",
