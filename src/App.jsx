@@ -6,6 +6,7 @@ import { cn } from './lib/utils';
 export default function App() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [category, setCategory] = useState('todas');
 
   useEffect(() => {
     fetch('./datos/noticias.json')
@@ -55,16 +56,48 @@ export default function App() {
             </p>
           </div>
         </motion.div>
+
+        {/* Navigation & Filters */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-6"
+        >
+          <nav className="flex flex-wrap gap-2 p-1.5 bg-white/50 backdrop-blur-md border border-slate-200 rounded-full shadow-sm inline-flex">
+            {['todas', 'Legislación', 'Mercado', 'ETTs'].map(cat => (
+              <button
+                key={cat}
+                onClick={() => setCategory(cat)}
+                className={cn(
+                  "px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 capitalize",
+                  category === cat 
+                    ? "bg-slate-900 text-white shadow-md" 
+                    : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+                )}
+              >
+                {cat}
+              </button>
+            ))}
+          </nav>
+          
+          <a href="./legacy_ui/leads.html" className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-google-blue to-blue-600 text-white font-bold rounded-full shadow-lg shadow-google-blue/20 hover:shadow-xl transition-all hover:-translate-y-0.5">
+            <Sparkles className="w-4 h-4" />
+            Radar de Leads B2B
+          </a>
+        </motion.div>
       </header>
 
       {/* Bento Grid */}
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-auto">
-        {news.length === 0 ? (
+        {news.filter(n => category === 'todas' || n.categoria === category).length === 0 ? (
           <div className="col-span-full py-20 text-center text-slate-500 font-mono">
-            No hay noticias en la base de datos.
+            No hay noticias en esta categoría.
           </div>
         ) : (
-          news.map((item, i) => <BentoCard key={i} item={item} index={i} />)
+          news
+            .filter(n => category === 'todas' || n.categoria === category)
+            .map((item, i) => <BentoCard key={i} item={item} index={i} />)
         )}
       </main>
     </div>

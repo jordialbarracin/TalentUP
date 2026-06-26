@@ -272,7 +272,7 @@ def main():
         else:
             print("- Fallo la descarga o el feed estaba vacio.")
             
-    DB_LEADS_PATH = os.path.join(os.path.dirname(__file__), 'datos', 'leads.js')
+    DB_LEADS_PATH = os.path.join(os.path.dirname(__file__), 'public', 'datos', 'leads.js')
     with open(DB_LEADS_PATH, 'w', encoding='utf-8') as f:
         f.write("const window_leads_data = " + json.dumps(todos_los_leads, ensure_ascii=False, indent=2) + ";")
     

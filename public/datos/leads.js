@@ -293,7 +293,7 @@ const window_leads_data = [
     "resumen": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPR09OQ3ZDcmFTamtKVVBCNjlHYS13Zkh3LUNwTGNaYXlPaWJGYTNtZXY4dVE1Q3ZaMmJ5dmx2T29NV1lZYkYzSHJuNmlCNDIzcGFCdFBScWtFOUVrV00zNXl5RGo5NlBEZmRFX3l2UlhlZ1YxbENOQUtsTVE4anhiNHRLOWo5cWpGdEZEUTJESkdsQlByMm8wLXYzaGZNWmhvM2I5Z0xvV0FSajg3SWxhNDVB?oc=5\" target=\"_blank\">McDonald’s inaugura su nuevo restaurante en la avenida San Ignacio de Pamplona</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Navarra Capital</font>",
     "impacto": "N/A",
     "riesgos": "N/A",
-    "fecha": "2026-06-17T09:03:00Z",
+    "fecha": "2026-06-17T07:00:00Z",
     "fuente": "Nuevas Aperturas",
     "categoria": "Aperturas",
     "empresa": "Desconocida",
@@ -358,18 +358,6 @@ const window_leads_data = [
     "categoria": "Aperturas",
     "empresa": "Desconocida",
     "ubicacion": "Telde"
-  },
-  {
-    "titulo": "Los despidos colectivos se disparan en Catalunya: casi 3.000 trabajadores afectados por ERE hasta abril - diaridetarragona.com",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQmxUdFF6eWNBbTBvZllHZlJsekRhQnFFQjNwTHhpMXd1LTMxT21qNW5ySEc2RVdZVjRreVRKY1ljRVRPd014RE5hT01hQTU5RzdBWXJ0ZXk5RjZwOEVPcHNGTWlGRFVXdnFJeEFNVl9YYkk3UmN2QjBRcGJERW9kRnRLZ0VxUHdveURZdGZJRjdZcVRyMVZqWE9zaHRXSHprU09idFdLWGV3X1J5ZVdZV0pSa3h1SFJ1R3ZJdGNHMVFwdDJsZVFydnJKa9IB0AFBVV95cUxOVThReTBRa1BRUFowNjBMbE9scjFPdE9HYjNXcGh5VVphVHRGbHlkM0lzblBwUERneXVvOFBCZzAwcnNMS1owNVJhei1lbXZZYXVOZ2gxR0s1TjlYalpJMFRuVVlpbTdxWUNTU0hMWEt0UGlhU2tRS2Nic243UVFUWjRzcXU0b2Eyand2V0lrdlQ2c1hfYnNGdU9hR2xTc1Rhd1Z1QWxiMUVaZzFJRXpTamVmRV8xcmJsdHRqTm9NZzVyVjZYMzA0OXAyU2lKMzlR?oc=5",
-    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQQmxUdFF6eWNBbTBvZllHZlJsekRhQnFFQjNwTHhpMXd1LTMxT21qNW5ySEc2RVdZVjRreVRKY1ljRVRPd014RE5hT01hQTU5RzdBWXJ0ZXk5RjZwOEVPcHNGTWlGRFVXdnFJeEFNVl9YYkk3UmN2QjBRcGJERW9kRnRLZ0VxUHdveURZdGZJRjdZcVRyMVZqWE9zaHRXSHprU09idFdLWGV3X1J5ZVdZV0pSa3h1SFJ1R3ZJdGNHMVFwdDJsZVFydnJKa9IB0AFBVV95cUxOVThReTBRa1BRUFowNjBMbE9scjFPdE9HYjNXcGh5VVphVHRGbHlkM0lzblBwUERneXVvOFBCZzAwcnNMS1owNVJhei1lbXZZYXVOZ2gxR0s1TjlYalpJMFRuVVlpbTdxWUNTU0hMWEt0UGlhU2tRS2Nic243UVFUWjRzcXU0b2Eyand2V0lrdlQ2c1hfYnNGdU9hR2xTc1Rhd1Z1QWxiMUVaZzFJRXpTamVmRV8xcmJsdHRqTm9NZzVyVjZYMzA0OXAyU2lKMzlR?oc=5\" target=\"_blank\">Los despidos colectivos se disparan en Catalunya: casi 3.000 trabajadores afectados por ERE hasta abril</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">diaridetarragona.com</font>",
-    "impacto": "N/A",
-    "riesgos": "N/A",
-    "fecha": "2026-06-13T07:00:00Z",
-    "fuente": "Alertas de Reestructuración",
-    "categoria": "Reestructuracion",
-    "empresa": "ERE",
-    "ubicacion": "Nacional"
   },
   {
     "titulo": "Iberia pone en rampa de salida su ERE voluntario para 844 trabajadores - EL PAÍS",
@@ -538,5 +526,17 @@ const window_leads_data = [
     "categoria": "Reestructuracion",
     "empresa": "Desconocida",
     "ubicacion": "Freepik"
+  },
+  {
+    "titulo": "El Santander ofrece las condiciones de su último ERE en un nuevo plan de prejubilaciones - Cinco Días",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQkRLLV9ZLWtYcWtQd3A0SGtkMWM4WjhUNmJDZV9BRHNmdGtYV2c1Wjkta3lWRUktRVZnSUpkTjZFWlFTYjBGLW9FWkgxaHY2ZzZZRDU0NVZWSnBVSVJ4SFJPNUJobVdVR1pGampNSlJyRk9iUGhnV2toXy1lQzZhVnA0VVRNcl80ZUxQc3Y0dHk2Ykg5V1VacGZwblJFalREUDZ1aTRidmEyUjlzNXJ5alZ6N0w1REpzWXJRWThLOFlua29Iek9PaC1TYm9Bc3FnNnZGb1NTVE5xeVHSAe8BQVVfeXFMTmhWdzRHd3BRajVDOUQ3cGthdXpXbTJrbHp2WDMxQ1E1bFpRbldVa0NZak8tekNrSXVSOTdWV0k1YmplMDRQTU5CQWJ0dVFXR2JlVFpQNUVxUFVscmFNbV80aGRXQnh3Q3NxLUVOUkEzRXZ4ZmpHYXA1aTI5YUFnU0ZOSGZwNWZkN29wX2ZoWnlSMnh0eExKLTB3dlQ2SUp5MHNRYzVleGdzV1FJeEJPTC15dXFndWEwTGhNcUlwQ1dOYUZiY1hDLWpaeDZHcl8ybThRbC1QWGNsZ1V1c1pVOG5IcUwxRk9IZ1hWTG02NzA?oc=5",
+    "resumen": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQkRLLV9ZLWtYcWtQd3A0SGtkMWM4WjhUNmJDZV9BRHNmdGtYV2c1Wjkta3lWRUktRVZnSUpkTjZFWlFTYjBGLW9FWkgxaHY2ZzZZRDU0NVZWSnBVSVJ4SFJPNUJobVdVR1pGampNSlJyRk9iUGhnV2toXy1lQzZhVnA0VVRNcl80ZUxQc3Y0dHk2Ykg5V1VacGZwblJFalREUDZ1aTRidmEyUjlzNXJ5alZ6N0w1REpzWXJRWThLOFlua29Iek9PaC1TYm9Bc3FnNnZGb1NTVE5xeVHSAe8BQVVfeXFMTmhWdzRHd3BRajVDOUQ3cGthdXpXbTJrbHp2WDMxQ1E1bFpRbldVa0NZak8tekNrSXVSOTdWV0k1YmplMDRQTU5CQWJ0dVFXR2JlVFpQNUVxUFVscmFNbV80aGRXQnh3Q3NxLUVOUkEzRXZ4ZmpHYXA1aTI5YUFnU0ZOSGZwNWZkN29wX2ZoWnlSMnh0eExKLTB3dlQ2SUp5MHNRYzVleGdzV1FJeEJPTC15dXFndWEwTGhNcUlwQ1dOYUZiY1hDLWpaeDZHcl8ybThRbC1QWGNsZ1V1c1pVOG5IcUwxRk9IZ1hWTG02NzA?oc=5\" target=\"_blank\">El Santander ofrece las condiciones de su último ERE en un nuevo plan de prejubilaciones</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Cinco Días</font>",
+    "impacto": "N/A",
+    "riesgos": "N/A",
+    "fecha": "2026-06-23T18:51:19Z",
+    "fuente": "Alertas de Reestructuración",
+    "categoria": "Reestructuracion",
+    "empresa": "ERE",
+    "ubicacion": "Santander"
   }
 ];
