@@ -41,5 +41,6 @@ jobs:
             echo "No hay cambios nuevos para subir."
           else
             git commit -m "Automatización: Actualización diaria de noticias y leads"
-            git push
+            git push origin main
+            git push origin main:gh-pages --force
           fi
